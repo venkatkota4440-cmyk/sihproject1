@@ -1,0 +1,28 @@
+[
+  {
+    "id": "msg_1",
+    "createdAt": "2026-09-24T13:45:05.097Z",
+    "updatedAt": "2026-09-24T13:45:05.097Z",
+    "conversationId": "user_farmer_1_user_buyer_1",
+    "senderId": "user_buyer_1",
+    "senderName": "FreshDirect Wholesale",
+    "receiverId": "user_farmer_1",
+    "orderId": "order_demo_301",
+    "text": "Hello Ramesh ji, we accepted the counter-offer for the 2,000 kg red onions. The consignment is urgently needed for retail packaging.",
+    "timestamp": "2026-09-24T08:45:05.097Z",
+    "read": true
+  },
+  {
+    "id": "msg_2",
+    "createdAt": "2026-09-24T13:45:05.098Z",
+    "updatedAt": "2026-09-24T13:45:05.098Z",
+    "conversationId": "user_farmer_1_user_buyer_1",
+    "senderId": "user_farmer_1",
+    "senderName": "Ramesh Patel",
+    "receiverId": "user_buyer_1",
+    "orderId": "order_demo_301",
+    "text": "Namaste! The crates are pre-sorted and loaded into Kisan Logistics refrigerated truck. Temperature maintained at 18°C.",
+    "timestamp": "2026-09-24T10:45:05.098Z",
+    "read": true
+  }
+]

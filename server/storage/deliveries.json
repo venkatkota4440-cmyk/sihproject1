@@ -1,0 +1,36 @@
+[
+  {
+    "id": "del_demo_501",
+    "createdAt": "2026-09-24T13:45:05.097Z",
+    "updatedAt": "2026-09-24T13:45:05.097Z",
+    "orderId": "order_demo_301",
+    "transporterId": "user_transporter_1",
+    "transporterName": "Kisan Logistics Express",
+    "vehicleNumber": "MH-12-QX-4890",
+    "pickupLocation": {
+      "name": "Niphad Farm Gate, Nashik",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "dropoffLocation": {
+      "name": "APMC Market Hub, Vashi, Navi Mumbai",
+      "coordinates": [
+        19.076,
+        73.003
+      ]
+    },
+    "currentCoordinates": [
+      19.62,
+      73.55
+    ],
+    "status": "IN_TRANSIT",
+    "speedKmH": 52,
+    "etaMinutes": 75,
+    "distanceTotalKm": 165,
+    "distanceRemainingKm": 62,
+    "temperatureCelsius": 18.2,
+    "otp": "482915"
+  }
+]

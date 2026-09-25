@@ -1,0 +1,39 @@
+[
+  {
+    "id": "offer_demo_101",
+    "createdAt": "2026-09-24T13:45:05.094Z",
+    "updatedAt": "2026-09-24T13:45:05.094Z",
+    "buyerId": "user_buyer_1",
+    "buyerName": "FreshDirect Wholesale",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "cropId": "crop_1",
+    "cropTitle": "Premium Nashik Red Onions",
+    "quantity": 2000,
+    "unit": "kg",
+    "offeredPrice": 27,
+    "totalPrice": 54000,
+    "message": "We require 2,000 kg for our Navi Mumbai distribution warehouse. Delivery required in 48 hours.",
+    "status": "ACCEPTED",
+    "history": [
+      {
+        "by": "BUYER",
+        "price": 25,
+        "message": "Initial procurement bid at ₹25/kg",
+        "date": "2026-09-23T10:00:00Z"
+      },
+      {
+        "by": "FARMER",
+        "price": 27,
+        "message": "Best price for Grade A sun-cured is ₹27/kg",
+        "date": "2026-09-23T11:30:00Z"
+      },
+      {
+        "by": "BUYER",
+        "price": 27,
+        "message": "Agreed! Proceeding to contract & payment.",
+        "date": "2026-09-23T12:00:00Z"
+      }
+    ]
+  }
+]

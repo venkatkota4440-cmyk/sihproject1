@@ -1,0 +1,3665 @@
+[
+  {
+    "id": "crop_rice",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Rice / Paddy (Basmati (1121))",
+    "cropId": "rice",
+    "cropName": "Rice / Paddy",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Basmati (1121)",
+    "allVarieties": [
+      "Basmati (1121)",
+      "Basmati (Pusa 1509)",
+      "Sona Masuri",
+      "IR64",
+      "Samba",
+      "Ponni",
+      "HMT",
+      "Swarna",
+      "Gobindobhog",
+      "Brown Rice"
+    ],
+    "quantity": 80,
+    "unit": "quintal",
+    "pricePerUnit": 46.5,
+    "minPrice": 38,
+    "maxPrice": 58,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient (15-20°C dry)",
+    "description": "Slender aromatic long-grain paddy with low moisture content (under 12%), optimal for wholesale milling, aging, and premium domestic or export markets.",
+    "location": {
+      "district": "Nashik",
+      "state": "Punjab",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 120,
+    "createdAt": "2026-09-24T16:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_wheat",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Wheat (Sharbati)",
+    "cropId": "wheat",
+    "cropName": "Wheat",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Sharbati",
+    "allVarieties": [
+      "Sharbati",
+      "HD 2967",
+      "HD 3086",
+      "PBW 550",
+      "PBW 343",
+      "Lokwan",
+      "Malavraj (Durum)"
+    ],
+    "quantity": 95,
+    "unit": "quintal",
+    "pricePerUnit": 28.5,
+    "minPrice": 24,
+    "maxPrice": 35,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Dry silo ambient",
+    "description": "Golden-lustre milling wheat with high gluten protein (12.5%+), uniform test weight, and zero fungal taint. Popular for premium atta and bakery processing.",
+    "location": {
+      "district": "Karnal",
+      "state": "Madhya",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 157,
+    "createdAt": "2026-09-24T15:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_maize",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Maize / Corn (Sweet Corn)",
+    "cropId": "maize",
+    "cropName": "Maize / Corn",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Sweet Corn",
+    "allVarieties": [
+      "Sweet Corn",
+      "Baby Corn",
+      "Dent Corn (Yellow)",
+      "Flint Corn",
+      "Fodder Maize"
+    ],
+    "quantity": 110,
+    "unit": "quintal",
+    "pricePerUnit": 23,
+    "minPrice": 19.5,
+    "maxPrice": 30,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 180,
+    "coldStorageTemp": "Dry ventilated storage",
+    "description": "Uniform golden-yellow kernel maize dried below 13% moisture. High starch recovery, ideal for poultry feed compounding, starch plants, and silage.",
+    "location": {
+      "district": "Mandya",
+      "state": "Karnataka",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 198,
+    "createdAt": "2026-09-24T14:47:03.833Z",
+    "updatedAt": "2026-09-24T18:42:29.948Z"
+  },
+  {
+    "id": "crop_sorghum",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Certified Organic Sorghum (Jowar) (Maldandi (M-35-1))",
+    "cropId": "sorghum",
+    "cropName": "Sorghum (Jowar)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "Maldandi (M-35-1)",
+    "allVarieties": [
+      "Maldandi (M-35-1)",
+      "CSH-9",
+      "Parbhani Moti",
+      "White Jowar",
+      "Yellow Jowar"
+    ],
+    "quantity": 125,
+    "unit": "quintal",
+    "pricePerUnit": 36,
+    "minPrice": 30,
+    "maxPrice": 44,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 240,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Gluten-free traditional drought-resistant pearl-white grain. Highly nutritious, popular for diabetic-friendly flour formulations and health snacks.",
+    "location": {
+      "district": "Indore",
+      "state": "Maharashtra",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1628172909068-1e434e32049e?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 231,
+    "createdAt": "2026-09-24T13:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_pearl-millet",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Pearl Millet (Bajra) (Desi Bajra)",
+    "cropId": "pearl-millet",
+    "cropName": "Pearl Millet (Bajra)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "Desi Bajra",
+    "allVarieties": [
+      "Desi Bajra",
+      "HHB 67",
+      "ICTP 8203",
+      "ProAgro 9444"
+    ],
+    "quantity": 140,
+    "unit": "quintal",
+    "pricePerUnit": 25.5,
+    "minPrice": 21,
+    "maxPrice": 32,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 180,
+    "coldStorageTemp": "Ambient dry",
+    "description": "High-iron, high-zinc climate-resilient super-millet. Cleaned, destoned grains suited for wholesome roti flour, poultry feed, and traditional winter diets.",
+    "location": {
+      "district": "Salem",
+      "state": "Rajasthan",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 268,
+    "createdAt": "2026-09-24T12:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_finger-millet",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Finger Millet (Ragi) (GPU 28)",
+    "cropId": "finger-millet",
+    "cropName": "Finger Millet (Ragi)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "GPU 28",
+    "allVarieties": [
+      "GPU 28",
+      "ML 365",
+      "Indaf 5",
+      "Brown Ragi",
+      "Red Ragi"
+    ],
+    "quantity": 155,
+    "unit": "quintal",
+    "pricePerUnit": 42,
+    "minPrice": 36,
+    "maxPrice": 52,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Rich in dietary calcium and amino acids. Clean graded whole grains preferred by baby food processors, nutraceuticals, and organic bakeries.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Karnataka",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 305,
+    "createdAt": "2026-09-24T11:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_foxtail-millet",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Certified Organic Foxtail Millet (Kangni) (SiA 3088)",
+    "cropId": "foxtail-millet",
+    "cropName": "Foxtail Millet (Kangni)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "SiA 3088",
+    "allVarieties": [
+      "SiA 3088",
+      "Surya",
+      "Prasad",
+      "HMT Foxtail"
+    ],
+    "quantity": 7900,
+    "unit": "kg",
+    "pricePerUnit": 68,
+    "minPrice": 55,
+    "maxPrice": 85,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Unpolished golden foxtail millet grains, unadulterated with low glycemic index. Ideal for healthy rice alternatives and wellness diets.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Andhra",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 342,
+    "createdAt": "2026-09-24T10:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_barley",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Barley (Jau) (Malt Barley (DWRB 123))",
+    "cropId": "barley",
+    "cropName": "Barley (Jau)",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Malt Barley (DWRB 123)",
+    "allVarieties": [
+      "Malt Barley (DWRB 123)",
+      "Feed Barley (RD 2035)",
+      "Hulled Barley",
+      "Hull-less Barley"
+    ],
+    "quantity": 185,
+    "unit": "quintal",
+    "pricePerUnit": 22.5,
+    "minPrice": 18,
+    "maxPrice": 28,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Dry silo ambient",
+    "description": "High test weight 6-row or 2-row barley with high germination capacity (>95%), prized by industrial malting houses and health food processors.",
+    "location": {
+      "district": "Warangal",
+      "state": "Rajasthan",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 379,
+    "createdAt": "2026-09-24T09:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_oats",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Oats (Jai) (Kent)",
+    "cropId": "oats",
+    "cropName": "Oats (Jai)",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Kent",
+    "allVarieties": [
+      "Kent",
+      "JHO 822",
+      "OS 6",
+      "Rolled Oat Groats"
+    ],
+    "quantity": 9200,
+    "unit": "kg",
+    "pricePerUnit": 58,
+    "minPrice": 46,
+    "maxPrice": 75,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 270,
+    "coldStorageTemp": "Cool dry",
+    "description": "Cleaned dehusked oat groats loaded with beta-glucan soluble dietary fiber. Suitable for breakfast muesli, oatmeal, and dietary supplements.",
+    "location": {
+      "district": "Nashik",
+      "state": "Punjab",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 416,
+    "createdAt": "2026-09-24T08:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_quinoa",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Certified Organic Quinoa (White Quinoa)",
+    "cropId": "quinoa",
+    "cropName": "Quinoa",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "White Quinoa",
+    "allVarieties": [
+      "White Quinoa",
+      "Red Quinoa",
+      "Black Quinoa"
+    ],
+    "quantity": 9850,
+    "unit": "kg",
+    "pricePerUnit": 110,
+    "minPrice": 90,
+    "maxPrice": 140,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Cool dry storage",
+    "description": "Saponin-washed complete-protein pseudo-cereal. Farm-level triple cleaned with 99.8% purity for export and domestic health retailers.",
+    "location": {
+      "district": "Karnal",
+      "state": "Rajasthan",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 453,
+    "createdAt": "2026-09-24T07:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_red-gram",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Red Gram / Tur / Arhar (Maruti (ICP 8863))",
+    "cropId": "red-gram",
+    "cropName": "Red Gram / Tur / Arhar",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Maruti (ICP 8863)",
+    "allVarieties": [
+      "Maruti (ICP 8863)",
+      "Asha (ICPL 87119)",
+      "BSMR 736",
+      "Gwalior White",
+      "Desi Tur"
+    ],
+    "quantity": 230,
+    "unit": "quintal",
+    "pricePerUnit": 104,
+    "minPrice": 88,
+    "maxPrice": 122,
+    "harvestDate": "2026-09-14",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry ventilated",
+    "description": "Whole round bold grain pigeon pea with dry lustrous seed coat. Graded and destoned, zero weevil damage, high dhal recovery percentage.",
+    "location": {
+      "district": "Mandya",
+      "state": "Maharashtra",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 490,
+    "createdAt": "2026-09-24T06:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_green-gram",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Green Gram / Moong (Pusa Vishal)",
+    "cropId": "green-gram",
+    "cropName": "Green Gram / Moong",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Pusa Vishal",
+    "allVarieties": [
+      "Pusa Vishal",
+      "Samrat",
+      "Kopargaon 1",
+      "Shiny Green",
+      "Desi Moong"
+    ],
+    "quantity": 245,
+    "unit": "quintal",
+    "pricePerUnit": 86,
+    "minPrice": 74,
+    "maxPrice": 98,
+    "harvestDate": "2026-09-13",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Medium-bold shiny green seed coat moong with high germination and uniform cooking time. Packed with easily digestible plant protein.",
+    "location": {
+      "district": "Indore",
+      "state": "Rajasthan",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1585849834908-3481231155e8?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 527,
+    "createdAt": "2026-09-24T05:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_black-gram",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Black Gram / Urad (T-9)",
+    "cropId": "black-gram",
+    "cropName": "Black Gram / Urad",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "T-9",
+    "allVarieties": [
+      "T-9",
+      "Pant U-31",
+      "VBN 6",
+      "Black Gold",
+      "Nayagarh Local"
+    ],
+    "quantity": 260,
+    "unit": "quintal",
+    "pricePerUnit": 82,
+    "minPrice": 70,
+    "maxPrice": 95,
+    "harvestDate": "2026-09-12",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "High-viscosity black seed coat urad with white interior. Preferred by South Indian batter manufacturers for idli/dosa fermentation elasticity.",
+    "location": {
+      "district": "Salem",
+      "state": "Madhya",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 564,
+    "createdAt": "2026-09-24T04:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_bengal-gram",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Bengal Gram / Chana (Desi Chana (JG 11))",
+    "cropId": "bengal-gram",
+    "cropName": "Bengal Gram / Chana",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Desi Chana (JG 11)",
+    "allVarieties": [
+      "Desi Chana (JG 11)",
+      "Vishal",
+      "Vijay",
+      "Kabuli Chana (Dollar)",
+      "Kabuli Chana (Kripa / 12mm)"
+    ],
+    "quantity": 275,
+    "unit": "quintal",
+    "pricePerUnit": 64,
+    "minPrice": 54,
+    "maxPrice": 76,
+    "harvestDate": "2026-09-11",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Sun-cured chickpeas in both bold Kabuli Dollar (10-12mm) and nutrient-dense Desi brown varieties. Free from discoloration and soil residue.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Madhya",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 601,
+    "createdAt": "2026-09-24T03:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_lentil",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Lentil / Masoor (Small Brown Masoor)",
+    "cropId": "lentil",
+    "cropName": "Lentil / Masoor",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Small Brown Masoor",
+    "allVarieties": [
+      "Small Brown Masoor",
+      "Bold Masoor (KLS 218)",
+      "Red Split Masoor (Malka)"
+    ],
+    "quantity": 290,
+    "unit": "quintal",
+    "pricePerUnit": 68,
+    "minPrice": 58,
+    "maxPrice": 79,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Whole brown and split orange masoor lentils. Fast cooking time, exceptional iron and potassium content, widely demanded by dal mills.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Madhya",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 138,
+    "createdAt": "2026-09-24T02:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_soybean",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Certified Organic Soybean (JS 335)",
+    "cropId": "soybean",
+    "cropName": "Soybean",
+    "category": "Pulses",
+    "subCategory": "Oilseed Pulses",
+    "variety": "JS 335",
+    "allVarieties": [
+      "JS 335",
+      "JS 9560",
+      "NRC 37",
+      "KDS 726 (Phule Sangam)"
+    ],
+    "quantity": 305,
+    "unit": "quintal",
+    "pricePerUnit": 46,
+    "minPrice": 40,
+    "maxPrice": 54,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 240,
+    "coldStorageTemp": "Cool dry",
+    "description": "Yellow seed coat soybean with 19-20% natural oil content and 40% protein. High test-weight, ideal for solvent extraction and DOC export.",
+    "location": {
+      "district": "Warangal",
+      "state": "Madhya",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 175,
+    "createdAt": "2026-09-24T01:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_rajma",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Kidney Beans / Rajma (Chitra Rajma (Kashmiri))",
+    "cropId": "rajma",
+    "cropName": "Kidney Beans / Rajma",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Chitra Rajma (Kashmiri)",
+    "allVarieties": [
+      "Chitra Rajma (Kashmiri)",
+      "Red Rajma",
+      "Jammu Sharmili",
+      "Chakrata Red"
+    ],
+    "quantity": 320,
+    "unit": "quintal",
+    "pricePerUnit": 135,
+    "minPrice": 115,
+    "maxPrice": 165,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Authentic speckled Chitra and deep mahogany red kidney beans. Thick gravy texture, buttery mouthfeel, highly valued in wholesale grocery chains.",
+    "location": {
+      "district": "Nashik",
+      "state": "Jammu",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 212,
+    "createdAt": "2026-09-24T00:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_cowpea",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Cowpea / Lobia (Chawli) (Pusa Komal)",
+    "cropId": "cowpea",
+    "cropName": "Cowpea / Lobia (Chawli)",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Pusa Komal",
+    "allVarieties": [
+      "Pusa Komal",
+      "Swarna",
+      "Red Lobia",
+      "White Black-Eyed Pea"
+    ],
+    "quantity": 335,
+    "unit": "quintal",
+    "pricePerUnit": 72,
+    "minPrice": 60,
+    "maxPrice": 85,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "White beans with distinctive dark eye spot. High soluble fiber, popular in both fresh vegetable pods and dry whole grain markets.",
+    "location": {
+      "district": "Karnal",
+      "state": "Rajasthan",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 249,
+    "createdAt": "2026-09-23T23:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_tomato",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Certified Organic Tomato (Hybrid Tomato (Abhinav / Saaho))",
+    "cropId": "tomato",
+    "cropName": "Tomato",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "Hybrid Tomato (Abhinav / Saaho)",
+    "allVarieties": [
+      "Hybrid Tomato (Abhinav / Saaho)",
+      "Cherry Tomato",
+      "Roma Tomato",
+      "Local Country (Desi) Tomato"
+    ],
+    "quantity": 15700,
+    "unit": "kg",
+    "pricePerUnit": 32,
+    "minPrice": 20,
+    "maxPrice": 48,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 14,
+    "coldStorageTemp": "10°C - 13°C (85-90% RH)",
+    "description": "Vine-ripened, firm-walled hybrid and desi tomatoes. High brix sweetness (4.8°+), uniform grade sizing, shock-resistant skin for long transit.",
+    "location": {
+      "district": "Mandya",
+      "state": "Maharashtra",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 286,
+    "createdAt": "2026-09-23T22:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_potato",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Potato (Kufri Jyoti)",
+    "cropId": "potato",
+    "cropName": "Potato",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "Kufri Jyoti",
+    "allVarieties": [
+      "Kufri Jyoti",
+      "Kufri Pukhraj",
+      "Chipsona 1 & 3 (Processing)",
+      "Kufri Bahar",
+      "Lauvkar"
+    ],
+    "quantity": 365,
+    "unit": "quintal",
+    "pricePerUnit": 18.5,
+    "minPrice": 14,
+    "maxPrice": 26,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 120,
+    "coldStorageTemp": "7°C - 10°C (CIPC treated)",
+    "description": "Graded table and processing potatoes. Low reducing sugars (<0.1%) for crisp frying, zero green skin or hollow heart defects.",
+    "location": {
+      "district": "Indore",
+      "state": "Uttar",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 323,
+    "createdAt": "2026-09-23T21:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_brinjal",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Brinjal / Eggplant (Long Purple Brinjal)",
+    "cropId": "brinjal",
+    "cropName": "Brinjal / Eggplant",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "Long Purple Brinjal",
+    "allVarieties": [
+      "Long Purple Brinjal",
+      "Round Bharta Brinjal",
+      "Green Striped (Manjri Gota)",
+      "White Brinjal"
+    ],
+    "quantity": 5000,
+    "unit": "kg",
+    "pricePerUnit": 24,
+    "minPrice": 16,
+    "maxPrice": 35,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 8,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Glossy skin tender eggplants with fresh green calyx. Minimal seed cavities, firm spongy flesh, zero fruit borer puncture holes.",
+    "location": {
+      "district": "Salem",
+      "state": "West",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 360,
+    "createdAt": "2026-09-23T20:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_green-chilli",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Certified Organic Green Chilli (G-4)",
+    "cropId": "green-chilli",
+    "cropName": "Green Chilli",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "G-4",
+    "allVarieties": [
+      "G-4",
+      "Jwala",
+      "Teja / Pusa Jwala",
+      "Sitara F1",
+      "Bullet Chilli"
+    ],
+    "quantity": 5650,
+    "unit": "kg",
+    "pricePerUnit": 48,
+    "minPrice": 35,
+    "maxPrice": 70,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 12,
+    "coldStorageTemp": "7°C - 9°C",
+    "description": "Deep green firm chillies with sharp pungency and intact green stems. Graded for long transport without moisture condensation or yellowing.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Andhra",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 397,
+    "createdAt": "2026-09-23T19:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_capsicum",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Capsicum / Bell Pepper (Green Bell Pepper (Indra F1))",
+    "cropId": "capsicum",
+    "cropName": "Capsicum / Bell Pepper",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "Green Bell Pepper (Indra F1)",
+    "allVarieties": [
+      "Green Bell Pepper (Indra F1)",
+      "Red Sweet Bell Pepper",
+      "Yellow Sweet Bell Pepper"
+    ],
+    "quantity": 6300,
+    "unit": "kg",
+    "pricePerUnit": 45,
+    "minPrice": 32,
+    "maxPrice": 65,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 15,
+    "coldStorageTemp": "8°C - 10°C (Reefer transport)",
+    "description": "Thick-walled 3-4 lobed blocky bell peppers harvested at optimum firm crispness. Zero sunburn marks, export-ready packaging in vented crates.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Maharashtra",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 434,
+    "createdAt": "2026-09-23T18:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_spinach",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Spinach / Palak (All Green Palak)",
+    "cropId": "spinach",
+    "cropName": "Spinach / Palak",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "All Green Palak",
+    "allVarieties": [
+      "All Green Palak",
+      "Pusa Bharati",
+      "Local Broadleaf Desi Palak"
+    ],
+    "quantity": 6950,
+    "unit": "kg",
+    "pricePerUnit": 22,
+    "minPrice": 14,
+    "maxPrice": 32,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 4,
+    "coldStorageTemp": "2°C - 4°C (High humidity cold chain)",
+    "description": "Crisp succulent deep-green tender spinach leaves. Washed, free of root dirt, zero aphid infestation or yellowed chlorotic foliage.",
+    "location": {
+      "district": "Warangal",
+      "state": "Maharashtra",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 471,
+    "createdAt": "2026-09-23T17:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_fenugreek-leaves",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Fenugreek Leaves (Methi) (Kasuri Methi)",
+    "cropId": "fenugreek-leaves",
+    "cropName": "Fenugreek Leaves (Methi)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Kasuri Methi",
+    "allVarieties": [
+      "Kasuri Methi",
+      "Pusa Early Bunching",
+      "Local Broad Leaf Methi"
+    ],
+    "quantity": 8250,
+    "unit": "kg",
+    "pricePerUnit": 28,
+    "minPrice": 18,
+    "maxPrice": 42,
+    "harvestDate": "2026-09-13",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 5,
+    "coldStorageTemp": "2°C - 4°C",
+    "description": "Tender aromatic green leaves harvested before flowering. Prized for traditional culinary delicacies, high iron, and bitter medicinal tonic properties.",
+    "location": {
+      "district": "Karnal",
+      "state": "Rajasthan",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 545,
+    "createdAt": "2026-09-23T15:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_mint",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Mint Leaves (Pudina) (Japanese Mint)",
+    "cropId": "mint",
+    "cropName": "Mint Leaves (Pudina)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Japanese Mint",
+    "allVarieties": [
+      "Japanese Mint",
+      "Spearmint (Pahari Pudina)",
+      "Local Desi Mint"
+    ],
+    "quantity": 8900,
+    "unit": "kg",
+    "pricePerUnit": 35,
+    "minPrice": 24,
+    "maxPrice": 55,
+    "harvestDate": "2026-09-12",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 5,
+    "coldStorageTemp": "3°C - 5°C",
+    "description": "High-menthol fresh green mint bunches. Strong refreshing aroma, harvested fresh for institutional beverages, chutneys, and pharmaceutical extraction.",
+    "location": {
+      "district": "Mandya",
+      "state": "Uttar",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 582,
+    "createdAt": "2026-09-23T14:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_onion",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Certified Organic Onion (Nashik Red Onion (Garwa))",
+    "cropId": "onion",
+    "cropName": "Onion",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Nashik Red Onion (Garwa)",
+    "allVarieties": [
+      "Nashik Red Onion (Garwa)",
+      "N-53 (Kharif Red)",
+      "Bhima Super",
+      "White Onion",
+      "Small Sambhar Shallots"
+    ],
+    "quantity": 135,
+    "unit": "quintal",
+    "pricePerUnit": 28,
+    "minPrice": 22,
+    "maxPrice": 38,
+    "harvestDate": "2026-09-11",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 150,
+    "coldStorageTemp": "Ambient ventilated chawl (25°C, 65% RH)",
+    "description": "Cured, sun-dried, pesticide-free Grade A Nashik Red Onions. Uniform size (55mm+), firm skin, zero sprouting. Direct from farm storage in Niphad.",
+    "location": {
+      "district": "Indore",
+      "state": "Maharashtra",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 619,
+    "createdAt": "2026-09-23T13:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_garlic",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Garlic (Lahsun) (Ooty Garlic)",
+    "cropId": "garlic",
+    "cropName": "Garlic (Lahsun)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Ooty Garlic",
+    "allVarieties": [
+      "Ooty Garlic",
+      "Yamuna Safed (G-1)",
+      "G-282 (Bold Clove)",
+      "Mandsaur Local"
+    ],
+    "quantity": 150,
+    "unit": "quintal",
+    "pricePerUnit": 145,
+    "minPrice": 110,
+    "maxPrice": 190,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 180,
+    "coldStorageTemp": "Ambient dry ventilated",
+    "description": "Bold white tight-skinned cloves with intense allicin pungency. Cured to prevent internal moisture rot, ideal for food processing and wholesale storage.",
+    "location": {
+      "district": "Salem",
+      "state": "Madhya",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615477550927-66a988d5e827?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 156,
+    "createdAt": "2026-09-23T12:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_ginger",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Fresh Ginger (Adrak) (Rio de Janeiro)",
+    "cropId": "ginger",
+    "cropName": "Fresh Ginger (Adrak)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Rio de Janeiro",
+    "allVarieties": [
+      "Rio de Janeiro",
+      "Maran",
+      "Wayanad Bold",
+      "Himachal Ginger"
+    ],
+    "quantity": 165,
+    "unit": "quintal",
+    "pricePerUnit": 85,
+    "minPrice": 65,
+    "maxPrice": 120,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 60,
+    "coldStorageTemp": "12°C - 14°C (85% RH)",
+    "description": "Fat plump fibrous rhizomes washed clean of red soil. Sharp spicy gingerol kick, firm skin with zero mold or soft rot.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Kerala",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 193,
+    "createdAt": "2026-09-23T11:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_turmeric",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Certified Organic Turmeric (Haldi) (Salem Turmeric)",
+    "cropId": "turmeric",
+    "cropName": "Turmeric (Haldi)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Salem Turmeric",
+    "allVarieties": [
+      "Salem Turmeric",
+      "Sangli Rajapore",
+      "Waigaon (GI Tagged)",
+      "Prathibha",
+      "Lakadong (7%+ Curcumin)"
+    ],
+    "quantity": 180,
+    "unit": "quintal",
+    "pricePerUnit": 142,
+    "minPrice": 120,
+    "maxPrice": 175,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "High curcumin (4.5% to 7.2%) cured turmeric fingers with radiant golden core. Thoroughly polished, free of lead chromate adulteration.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Telangana",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 230,
+    "createdAt": "2026-09-23T10:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_carrot",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Carrot (Gajar) (Pusa Rudhira (Red))",
+    "cropId": "carrot",
+    "cropName": "Carrot (Gajar)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Pusa Rudhira (Red)",
+    "allVarieties": [
+      "Pusa Rudhira (Red)",
+      "Nantes (Orange)",
+      "Pusa Kesar",
+      "Black Carrot"
+    ],
+    "quantity": 12150,
+    "unit": "kg",
+    "pricePerUnit": 26,
+    "minPrice": 18,
+    "maxPrice": 38,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 21,
+    "coldStorageTemp": "0°C - 2°C (95% RH)",
+    "description": "Sweet, crisp, hydro-cooled carrots. Straight tapered roots without secondary rootlets, rich in natural beta-carotene and lycopene.",
+    "location": {
+      "district": "Warangal",
+      "state": "Haryana",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 267,
+    "createdAt": "2026-09-23T09:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_radish",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Radish (Mooli) (Pusa Chetki)",
+    "cropId": "radish",
+    "cropName": "Radish (Mooli)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Pusa Chetki",
+    "allVarieties": [
+      "Pusa Chetki",
+      "Japanese White",
+      "Pusa Himani",
+      "Red Round Radish"
+    ],
+    "quantity": 12800,
+    "unit": "kg",
+    "pricePerUnit": 18,
+    "minPrice": 12,
+    "maxPrice": 28,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "0°C - 2°C",
+    "description": "Pure white crisp cylindrical roots with peppery crunch. Tender texture, zero pithiness, harvested and washed in fresh borewell water.",
+    "location": {
+      "district": "Nashik",
+      "state": "West",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 304,
+    "createdAt": "2026-09-23T08:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_beetroot",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Certified Organic Beetroot (Chukandar) (Detroit Dark Red)",
+    "cropId": "beetroot",
+    "cropName": "Beetroot (Chukandar)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Detroit Dark Red",
+    "allVarieties": [
+      "Detroit Dark Red",
+      "Crimson Globe",
+      "Ruby Queen"
+    ],
+    "quantity": 13450,
+    "unit": "kg",
+    "pricePerUnit": 28,
+    "minPrice": 20,
+    "maxPrice": 40,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 30,
+    "coldStorageTemp": "1°C - 3°C",
+    "description": "Globular smooth deep-purple beetroots. Rich betalain content, uniform 60-80mm grading, sweet earthy taste without fibrous rings.",
+    "location": {
+      "district": "Karnal",
+      "state": "Tamil",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 341,
+    "createdAt": "2026-09-23T07:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_cucumber",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Cucumber (Kheera / Kakdi) (English Seedless Cucumber (Greenhouse))",
+    "cropId": "cucumber",
+    "cropName": "Cucumber (Kheera / Kakdi)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "English Seedless Cucumber (Greenhouse)",
+    "allVarieties": [
+      "English Seedless Cucumber (Greenhouse)",
+      "Poinsette",
+      "Desi White Kakdi",
+      "Malini F1"
+    ],
+    "quantity": 14100,
+    "unit": "kg",
+    "pricePerUnit": 25,
+    "minPrice": 16,
+    "maxPrice": 36,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Crisp, refreshing, thin-skinned cucumbers. High water content, zero bitterness, packed in corrugated cartons for zero transit abrasion.",
+    "location": {
+      "district": "Mandya",
+      "state": "Haryana",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1449339854873-750e6913301b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 378,
+    "createdAt": "2026-09-23T06:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_bottle-gourd",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Bottle Gourd (Lauki / Doodhi) (Pusa Naveen (Cylindrical))",
+    "cropId": "bottle-gourd",
+    "cropName": "Bottle Gourd (Lauki / Doodhi)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Pusa Naveen (Cylindrical)",
+    "allVarieties": [
+      "Pusa Naveen (Cylindrical)",
+      "Varad F1",
+      "Round Lauki",
+      "Arka Bahar"
+    ],
+    "quantity": 14750,
+    "unit": "kg",
+    "pricePerUnit": 20,
+    "minPrice": 12,
+    "maxPrice": 30,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Smooth light-green cylindrical gourds with tender sponge core and tiny immature seeds. Excellent juice yield and dietary lightness.",
+    "location": {
+      "district": "Indore",
+      "state": "Uttar",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 415,
+    "createdAt": "2026-09-23T05:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_bitter-gourd",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Bitter Gourd (Karela) (Pusa Do Mausami)",
+    "cropId": "bitter-gourd",
+    "cropName": "Bitter Gourd (Karela)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Pusa Do Mausami",
+    "allVarieties": [
+      "Pusa Do Mausami",
+      "Chaman F1 (Dark Green Spiky)",
+      "Preethi (White Kerala Karela)"
+    ],
+    "quantity": 15400,
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "minPrice": 26,
+    "maxPrice": 52,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 12,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Tightly ridged spiny dark green bitter gourds. High charantin and momordicin content, renowned for natural glycemic management.",
+    "location": {
+      "district": "Salem",
+      "state": "Kerala",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 452,
+    "createdAt": "2026-09-23T04:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_pumpkin",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Pumpkin (Kaddu) (Arka Chandan)",
+    "cropId": "pumpkin",
+    "cropName": "Pumpkin (Kaddu)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Arka Chandan",
+    "allVarieties": [
+      "Arka Chandan",
+      "Ambili",
+      "Disco Kaddu",
+      "Butternut Squash"
+    ],
+    "quantity": 4050,
+    "unit": "kg",
+    "pricePerUnit": 16,
+    "minPrice": 10,
+    "maxPrice": 24,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 90,
+    "coldStorageTemp": "12°C - 15°C (Well ventilated dry)",
+    "description": "Thick orange-fleshed mature pumpkins with hard durable rind. Long storage capability with zero loss of nutritional beta-carotene.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Odisha",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1506917728037-b6fb01c454e2?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 489,
+    "createdAt": "2026-09-23T03:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_watermelon",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Watermelon (Tarbooz) (Sugar Baby)",
+    "cropId": "watermelon",
+    "cropName": "Watermelon (Tarbooz)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Sugar Baby",
+    "allVarieties": [
+      "Sugar Baby",
+      "Kiran F1 (Black Pearl)",
+      "Namdhari NS 295",
+      "Yellow Meat Watermelon"
+    ],
+    "quantity": 4700,
+    "unit": "kg",
+    "pricePerUnit": 14,
+    "minPrice": 9,
+    "maxPrice": 22,
+    "harvestDate": "2026-09-14",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 20,
+    "coldStorageTemp": "12°C - 14°C",
+    "description": "Crisp crimson-fleshed watermelons with high sugar brix (11.5° - 13°). Seedless or micro-seeded varieties, tested for sweet hollow-thump maturity.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Karnataka",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 526,
+    "createdAt": "2026-09-23T02:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_cabbage",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Certified Organic Cabbage (Patta Gobhi) (Golden Acre)",
+    "cropId": "cabbage",
+    "cropName": "Cabbage (Patta Gobhi)",
+    "category": "Vegetables",
+    "subCategory": "Cole Crops",
+    "variety": "Golden Acre",
+    "allVarieties": [
+      "Golden Acre",
+      "Pride of India",
+      "Green Express F1",
+      "Red Cabbage"
+    ],
+    "quantity": 5350,
+    "unit": "kg",
+    "pricePerUnit": 16,
+    "minPrice": 10,
+    "maxPrice": 24,
+    "harvestDate": "2026-09-13",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 25,
+    "coldStorageTemp": "0°C - 2°C (95% RH)",
+    "description": "Tightly wrapped firm globular cabbage heads. Outer leaves trimmed clean, crisp crunchy texture with high vitamin C and glucosinolates.",
+    "location": {
+      "district": "Warangal",
+      "state": "West",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 563,
+    "createdAt": "2026-09-23T01:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_cauliflower",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Cauliflower (Phool Gobhi) (Pusa Snowball)",
+    "cropId": "cauliflower",
+    "cropName": "Cauliflower (Phool Gobhi)",
+    "category": "Vegetables",
+    "subCategory": "Cole Crops",
+    "variety": "Pusa Snowball",
+    "allVarieties": [
+      "Pusa Snowball",
+      "Pusa Deepali (Early)",
+      "Madhuri F1",
+      "Barkha"
+    ],
+    "quantity": 6000,
+    "unit": "kg",
+    "pricePerUnit": 26,
+    "minPrice": 18,
+    "maxPrice": 38,
+    "harvestDate": "2026-09-12",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 14,
+    "coldStorageTemp": "0°C - 2°C",
+    "description": "Snow-white compact dense curds protected by lush green jacket leaves. Free from browning, riceyness, or insect tunneling.",
+    "location": {
+      "district": "Nashik",
+      "state": "Bihar",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 600,
+    "createdAt": "2026-09-23T00:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_broccoli",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Broccoli (Calabrese)",
+    "cropId": "broccoli",
+    "cropName": "Broccoli",
+    "category": "Vegetables",
+    "subCategory": "Cole Crops",
+    "variety": "Calabrese",
+    "allVarieties": [
+      "Calabrese",
+      "Green Magic F1",
+      "Belstar",
+      "Lucky F1"
+    ],
+    "quantity": 6650,
+    "unit": "kg",
+    "pricePerUnit": 65,
+    "minPrice": 45,
+    "maxPrice": 95,
+    "harvestDate": "2026-09-11",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "0°C - 1°C (Iced cold chain)",
+    "description": "Deep emerald-blue tight bead heads with crisp succulent stalks. Harvested at cold morning temperatures and immediately pre-cooled.",
+    "location": {
+      "district": "Karnal",
+      "state": "Himachal",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 137,
+    "createdAt": "2026-09-22T23:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_green-peas",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Certified Organic Green Peas (Matar) (GS-10 (Sweet Golden))",
+    "cropId": "green-peas",
+    "cropName": "Green Peas (Matar)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "GS-10 (Sweet Golden)",
+    "allVarieties": [
+      "GS-10 (Sweet Golden)",
+      "Arka Ajit",
+      "Pusa Pragati",
+      "Azad Matar 1"
+    ],
+    "quantity": 7300,
+    "unit": "kg",
+    "pricePerUnit": 45,
+    "minPrice": 30,
+    "maxPrice": 70,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "0°C - 2°C",
+    "description": "Plump sweet-kernel pods packed with 8-10 bright green peas. High natural sugar content, perfect for fresh retail tables and IQF freezing.",
+    "location": {
+      "district": "Mandya",
+      "state": "Uttar",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1587735243615-c03f25aaff15?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 174,
+    "createdAt": "2026-09-22T22:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_okra",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Okra / Lady Finger (Bhindi) (Singham F1)",
+    "cropId": "okra",
+    "cropName": "Okra / Lady Finger (Bhindi)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "Singham F1",
+    "allVarieties": [
+      "Singham F1",
+      "Radhika F1",
+      "Pusa Sawani",
+      "Parbhani Kranti"
+    ],
+    "quantity": 7950,
+    "unit": "kg",
+    "pricePerUnit": 36,
+    "minPrice": 24,
+    "maxPrice": 54,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 7,
+    "coldStorageTemp": "9°C - 11°C",
+    "description": "Tender 5-ridged dark green pods harvested before fiber development (easy tip snap test). Zero yellow vein mosaic virus symptoms.",
+    "location": {
+      "district": "Indore",
+      "state": "Gujarat",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1425543103986-22abb7d7e8d2?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 211,
+    "createdAt": "2026-09-22T21:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_french-beans",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh French Beans (Farasbi) (Falguni)",
+    "cropId": "french-beans",
+    "cropName": "French Beans (Farasbi)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "Falguni",
+    "allVarieties": [
+      "Falguni",
+      "Anupama",
+      "Contender",
+      "Arka Suvidha"
+    ],
+    "quantity": 8600,
+    "unit": "kg",
+    "pricePerUnit": 42,
+    "minPrice": 28,
+    "maxPrice": 62,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 8,
+    "coldStorageTemp": "5°C - 7°C",
+    "description": "Stringless round fleshy green bean pods. Tender snap, vibrant color, sorted for uniform length and zero blemish markings.",
+    "location": {
+      "district": "Salem",
+      "state": "Karnataka",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 248,
+    "createdAt": "2026-09-22T20:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_drumstick",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Certified Organic Drumstick (Moringa / Shevga) (PKM-1)",
+    "cropId": "drumstick",
+    "cropName": "Drumstick (Moringa / Shevga)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "PKM-1",
+    "allVarieties": [
+      "PKM-1",
+      "PKM-2",
+      "ODC 3",
+      "Rohit 1"
+    ],
+    "quantity": 9250,
+    "unit": "kg",
+    "pricePerUnit": 45,
+    "minPrice": 30,
+    "maxPrice": 75,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 14,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Long tender green seed pods rich in calcium, iron, and vitamin C. Fleshy pulp with zero woody fiber hardening, bundled for transit.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Tamil",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 285,
+    "createdAt": "2026-09-22T19:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_mango",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Mango (Alphonso (Hapus))",
+    "cropId": "mango",
+    "cropName": "Mango",
+    "category": "Fruits",
+    "subCategory": "Tropical Fruits",
+    "variety": "Alphonso (Hapus)",
+    "allVarieties": [
+      "Alphonso (Hapus)",
+      "Kesar",
+      "Banganapalli",
+      "Dasheri",
+      "Langra",
+      "Totapuri"
+    ],
+    "quantity": 9900,
+    "unit": "kg",
+    "pricePerUnit": 340,
+    "minPrice": 240,
+    "maxPrice": 480,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 14,
+    "coldStorageTemp": "12°C - 13°C",
+    "description": "Naturally ripened GI-tagged Alphonso and Kesar mangoes. Rich saffron pulp, sweet aroma, zero carbide ripening chemicals.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Maharashtra",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1553279768-865429fa0078?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 322,
+    "createdAt": "2026-09-22T18:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_banana",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Banana (Grand Naine (G9))",
+    "cropId": "banana",
+    "cropName": "Banana",
+    "category": "Fruits",
+    "subCategory": "Tropical Fruits",
+    "variety": "Grand Naine (G9)",
+    "allVarieties": [
+      "Grand Naine (G9)",
+      "Robusta",
+      "Yellaki (Elaichi)",
+      "Nendran"
+    ],
+    "quantity": 10550,
+    "unit": "kg",
+    "pricePerUnit": 22,
+    "minPrice": 15,
+    "maxPrice": 32,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 12,
+    "coldStorageTemp": "13°C - 14°C (Ethylene ripening chamber compatible)",
+    "description": "Tissue-culture Grand Naine Cavendish bananas. Uniform 7-8 inch fingers, clean spotless green skin ready for controlled ripening chambers.",
+    "location": {
+      "district": "Warangal",
+      "state": "Maharashtra",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 359,
+    "createdAt": "2026-09-22T17:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_pomegranate",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Pomegranate (Anar) (Bhagwa (Sindhuri))",
+    "cropId": "pomegranate",
+    "cropName": "Pomegranate (Anar)",
+    "category": "Fruits",
+    "subCategory": "Sub-Tropical Fruits",
+    "variety": "Bhagwa (Sindhuri)",
+    "allVarieties": [
+      "Bhagwa (Sindhuri)",
+      "Arakta",
+      "Ganesh",
+      "Ruby"
+    ],
+    "quantity": 11200,
+    "unit": "kg",
+    "pricePerUnit": 115,
+    "minPrice": 85,
+    "maxPrice": 155,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 45,
+    "coldStorageTemp": "5°C - 7°C (90% RH)",
+    "description": "Deep ruby-red arils with soft seeds and high brix sweetness (15°+). Glossy red rind with zero thrips or bacterial blight spots.",
+    "location": {
+      "district": "Nashik",
+      "state": "Maharashtra",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 396,
+    "createdAt": "2026-09-22T16:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_little-millet",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Little Millet (Kutki) (CO 2)",
+    "cropId": "little-millet",
+    "cropName": "Little Millet (Kutki)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "CO 2",
+    "allVarieties": [
+      "CO 2",
+      "JK 8",
+      "Olm 203",
+      "Desi Kutki"
+    ],
+    "quantity": 11850,
+    "unit": "kg",
+    "pricePerUnit": 72,
+    "minPrice": 58,
+    "maxPrice": 88,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Dehusked small-grain superfood packed with fiber and micronutrients, fast-cooking and favored for diabetic diets.",
+    "location": {
+      "district": "Karnal",
+      "state": "Madhya",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 433,
+    "createdAt": "2026-09-22T15:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_kodo-millet",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Kodo Millet (Kodon) (GPUK 3)",
+    "cropId": "kodo-millet",
+    "cropName": "Kodo Millet (Kodon)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "GPUK 3",
+    "allVarieties": [
+      "GPUK 3",
+      "RBK 155",
+      "JK 48",
+      "Desi Kodon"
+    ],
+    "quantity": 12500,
+    "unit": "kg",
+    "pricePerUnit": 65,
+    "minPrice": 52,
+    "maxPrice": 80,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Traditional drought-hardy millet with high antioxidant and dietary polyphenol profile. Excellent shelf stability when milled.",
+    "location": {
+      "district": "Mandya",
+      "state": "Madhya",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 470,
+    "createdAt": "2026-09-22T14:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_barnyard-millet",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Certified Organic Barnyard Millet (Sanwa) (PRJ 1)",
+    "cropId": "barnyard-millet",
+    "cropName": "Barnyard Millet (Sanwa)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "PRJ 1",
+    "allVarieties": [
+      "PRJ 1",
+      "VL Madira 207",
+      "CO 1",
+      "Desi Sanwa"
+    ],
+    "quantity": 13150,
+    "unit": "kg",
+    "pricePerUnit": 78,
+    "minPrice": 62,
+    "maxPrice": 95,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Dehusked creamy white grain, ideal fasting substitute (vrat ke chawal) rich in digestible phosphorus and iron.",
+    "location": {
+      "district": "Indore",
+      "state": "Uttarakhand",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 507,
+    "createdAt": "2026-09-22T13:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_proso-millet",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Proso Millet (Chena) (CO 5)",
+    "cropId": "proso-millet",
+    "cropName": "Proso Millet (Chena)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "CO 5",
+    "allVarieties": [
+      "CO 5",
+      "BR 7",
+      "Desi Chena"
+    ],
+    "quantity": 13800,
+    "unit": "kg",
+    "pricePerUnit": 70,
+    "minPrice": 56,
+    "maxPrice": 85,
+    "harvestDate": "2026-09-14",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 300,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Golden short-duration crop grain with superior lecithin content for brain health and cholesterol regulation.",
+    "location": {
+      "district": "Salem",
+      "state": "Bihar",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1628172909068-1e434e32049e?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 544,
+    "createdAt": "2026-09-22T12:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_buckwheat",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Buckwheat (Kuttu) (Himpriya)",
+    "cropId": "buckwheat",
+    "cropName": "Buckwheat (Kuttu)",
+    "category": "Cereals & Grains",
+    "subCategory": "Millets",
+    "variety": "Himpriya",
+    "allVarieties": [
+      "Himpriya",
+      "Shimla Local",
+      "Common Buckwheat",
+      "Tartary Buckwheat"
+    ],
+    "quantity": 14450,
+    "unit": "kg",
+    "pricePerUnit": 95,
+    "minPrice": 75,
+    "maxPrice": 120,
+    "harvestDate": "2026-09-13",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Cool dry (15°C)",
+    "description": "Himalayan groats and flour high in rutin and bioflavonoids, naturally gluten-free and in high festive demand.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Uttarakhand",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 581,
+    "createdAt": "2026-09-22T11:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_brown-rice",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Certified Organic Brown Rice (Basmati Brown)",
+    "cropId": "brown-rice",
+    "cropName": "Brown Rice",
+    "category": "Cereals & Grains",
+    "subCategory": "Major Cereals",
+    "variety": "Basmati Brown",
+    "allVarieties": [
+      "Basmati Brown",
+      "Sona Masuri Brown",
+      "Red Brown Rice"
+    ],
+    "quantity": 15100,
+    "unit": "kg",
+    "pricePerUnit": 62,
+    "minPrice": 50,
+    "maxPrice": 78,
+    "harvestDate": "2026-09-12",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 180,
+    "coldStorageTemp": "Dry cool",
+    "description": "Unpolished whole grain rice retaining bran layer and germ, packed with thiamine, magnesium, and dietary fiber.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Punjab",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 618,
+    "createdAt": "2026-09-22T10:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_field-pea",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Field Pea (Dry Matar) (HFP 4)",
+    "cropId": "field-pea",
+    "cropName": "Field Pea (Dry Matar)",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "HFP 4",
+    "allVarieties": [
+      "HFP 4",
+      "Aman",
+      "DDR 23",
+      "White Pea",
+      "Green Dry Pea"
+    ],
+    "quantity": 205,
+    "unit": "quintal",
+    "pricePerUnit": 55,
+    "minPrice": 44,
+    "maxPrice": 68,
+    "harvestDate": "2026-09-11",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Dry ventilated",
+    "description": "Graded round yellow and green dry peas for wholesale dal processing, snacks manufacturing, and roadside catering.",
+    "location": {
+      "district": "Warangal",
+      "state": "Uttar",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 155,
+    "createdAt": "2026-09-22T09:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_horse-gram",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Horse Gram (Kulthi) (Madhu)",
+    "cropId": "horse-gram",
+    "cropName": "Horse Gram (Kulthi)",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "Madhu",
+    "allVarieties": [
+      "Madhu",
+      "PHG 9",
+      "CRIDA 18R",
+      "Brown Kulthi"
+    ],
+    "quantity": 4400,
+    "unit": "kg",
+    "pricePerUnit": 64,
+    "minPrice": 50,
+    "maxPrice": 78,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "High-protein, iron-rich traditional pulse renowned in Ayurveda for stone dissolution and metabolic health.",
+    "location": {
+      "district": "Nashik",
+      "state": "Karnataka",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 192,
+    "createdAt": "2026-09-22T08:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_moth-bean",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Certified Organic Moth Bean (Matki) (RMO 40)",
+    "cropId": "moth-bean",
+    "cropName": "Moth Bean (Matki)",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "RMO 40",
+    "allVarieties": [
+      "RMO 40",
+      "RMO 257",
+      "CZM 2",
+      "Desi Matki"
+    ],
+    "quantity": 5050,
+    "unit": "kg",
+    "pricePerUnit": 88,
+    "minPrice": 72,
+    "maxPrice": 105,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 365,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Tiny brown high-protein beans essential for Bikaneri bhujia, sprouting, and classic Maharashtrian usal.",
+    "location": {
+      "district": "Karnal",
+      "state": "Rajasthan",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1585849834908-3481231155e8?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 229,
+    "createdAt": "2026-09-22T07:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_lablab-bean",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Lablab Bean / Hyacinth Bean (Avare) (HA 4)",
+    "cropId": "lablab-bean",
+    "cropName": "Lablab Bean / Hyacinth Bean (Avare)",
+    "category": "Pulses",
+    "subCategory": "Major Pulses",
+    "variety": "HA 4",
+    "allVarieties": [
+      "HA 4",
+      "CO 14",
+      "Deepali",
+      "Karnataka Avarekalu"
+    ],
+    "quantity": 5700,
+    "unit": "kg",
+    "pricePerUnit": 76,
+    "minPrice": 60,
+    "maxPrice": 95,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 240,
+    "coldStorageTemp": "Ambient dry",
+    "description": "Fragrant winter bean famous across South India for hitikida avarebele delicacies and culinary stews.",
+    "location": {
+      "district": "Mandya",
+      "state": "Karnataka",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1592417817098-8f3d6910985b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 266,
+    "createdAt": "2026-09-22T06:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_red-chilli",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Red Chilli (Dry & Fresh) (Guntur Sannam (S4))",
+    "cropId": "red-chilli",
+    "cropName": "Red Chilli (Dry & Fresh)",
+    "category": "Vegetables",
+    "subCategory": "Solanaceous Vegetables",
+    "variety": "Guntur Sannam (S4)",
+    "allVarieties": [
+      "Guntur Sannam (S4)",
+      "Byadagi",
+      "Teja",
+      "Kashmiri Lal",
+      "Wonder Hot"
+    ],
+    "quantity": 6350,
+    "unit": "kg",
+    "pricePerUnit": 195,
+    "minPrice": 150,
+    "maxPrice": 260,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 180,
+    "coldStorageTemp": "4°C - 6°C (Cold storage for color retention)",
+    "description": "Deep red, high-pungency dry pods and fresh export grade pods with vibrant capsaicin and ASTA color values.",
+    "location": {
+      "district": "Indore",
+      "state": "Andhra",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 303,
+    "createdAt": "2026-09-22T05:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_amaranth-leaves",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Amaranth Leaves (Chaulai) (Pusa Kiran (Red))",
+    "cropId": "amaranth-leaves",
+    "cropName": "Amaranth Leaves (Chaulai)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Pusa Kiran (Red)",
+    "allVarieties": [
+      "Pusa Kiran (Red)",
+      "Pusa Kirti (Green)",
+      "Chhoti Chaulai",
+      "Badi Chaulai"
+    ],
+    "quantity": 7000,
+    "unit": "kg",
+    "pricePerUnit": 22,
+    "minPrice": 15,
+    "maxPrice": 32,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 3,
+    "coldStorageTemp": "2°C - 4°C (95% RH)",
+    "description": "Tender reddish-green leaves brimming with vitamins A, C, folate, and calcium. Fresh harvested morning bunches.",
+    "location": {
+      "district": "Salem",
+      "state": "Uttar",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 340,
+    "createdAt": "2026-09-22T04:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_curry-leaves",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Curry Leaves (Kadi Patta) (Senkaampu (Red stem))",
+    "cropId": "curry-leaves",
+    "cropName": "Curry Leaves (Kadi Patta)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Senkaampu (Red stem)",
+    "allVarieties": [
+      "Senkaampu (Red stem)",
+      "DWR 1",
+      "Local Fragrant Broadleaf"
+    ],
+    "quantity": 7650,
+    "unit": "kg",
+    "pricePerUnit": 45,
+    "minPrice": 30,
+    "maxPrice": 65,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 5,
+    "coldStorageTemp": "5°C - 7°C",
+    "description": "Intensely aromatic deep green glossy leaves with high essential oil volatile fraction, bundled fresh for dispatch.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Tamil",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 377,
+    "createdAt": "2026-09-22T03:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_drumstick-leaves",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Drumstick Leaves (Moringa Leaves) (PKM 1)",
+    "cropId": "drumstick-leaves",
+    "cropName": "Drumstick Leaves (Moringa Leaves)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "PKM 1",
+    "allVarieties": [
+      "PKM 1",
+      "ODC 3",
+      "Desi Moringa"
+    ],
+    "quantity": 8300,
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "minPrice": 25,
+    "maxPrice": 55,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 4,
+    "coldStorageTemp": "4°C - 6°C",
+    "description": "Nutrient-dense superfood foliage, hand-plucked tender green leaves for culinary use and dehydrated moringa powder.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Tamil",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 414,
+    "createdAt": "2026-09-22T02:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_gongura",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Certified Organic Gongura (Roselle / Ambadi) (Red Stem Gongura)",
+    "cropId": "gongura",
+    "cropName": "Gongura (Roselle / Ambadi)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Red Stem Gongura",
+    "allVarieties": [
+      "Red Stem Gongura",
+      "Green Stem Gongura"
+    ],
+    "quantity": 8950,
+    "unit": "kg",
+    "pricePerUnit": 28,
+    "minPrice": 18,
+    "maxPrice": 40,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 3,
+    "coldStorageTemp": "4°C - 5°C",
+    "description": "Tangy sour sorrel leaves beloved in Andhra gongura pachadi, mutton gongura, and vitamin C rich curries.",
+    "location": {
+      "district": "Warangal",
+      "state": "Andhra",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1607532941433-304659e8198a?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 451,
+    "createdAt": "2026-09-22T01:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_lettuce",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Lettuce (Salad Leaves) (Iceberg)",
+    "cropId": "lettuce",
+    "cropName": "Lettuce (Salad Leaves)",
+    "category": "Vegetables",
+    "subCategory": "Leafy Vegetables",
+    "variety": "Iceberg",
+    "allVarieties": [
+      "Iceberg",
+      "Romaine",
+      "Lollo Rosso",
+      "Butterhead"
+    ],
+    "quantity": 9600,
+    "unit": "kg",
+    "pricePerUnit": 65,
+    "minPrice": 45,
+    "maxPrice": 95,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 7,
+    "coldStorageTemp": "1°C - 2°C (98% RH)",
+    "description": "Crisp, hydro-cooled and graded salad greens for quick-service restaurants, retail packs, and hospitality chains.",
+    "location": {
+      "district": "Nashik",
+      "state": "Himachal",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 488,
+    "createdAt": "2026-09-22T00:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_turnip",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Turnip (Shalgam) (Purple Top White Globe)",
+    "cropId": "turnip",
+    "cropName": "Turnip (Shalgam)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Purple Top White Globe",
+    "allVarieties": [
+      "Purple Top White Globe",
+      "Pusa Sweti",
+      "Snowball"
+    ],
+    "quantity": 10250,
+    "unit": "kg",
+    "pricePerUnit": 24,
+    "minPrice": 16,
+    "maxPrice": 35,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 21,
+    "coldStorageTemp": "0°C - 2°C (95% RH)",
+    "description": "Crisp, mild-pungent purple-shouldered white globes, washed and destemmed for vegetable markets and pickling.",
+    "location": {
+      "district": "Karnal",
+      "state": "Punjab",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 525,
+    "createdAt": "2026-09-21T23:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_sweet-potato",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Certified Organic Sweet Potato (Shakarkand) (Bhu Sona (Orange pulp))",
+    "cropId": "sweet-potato",
+    "cropName": "Sweet Potato (Shakarkand)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Bhu Sona (Orange pulp)",
+    "allVarieties": [
+      "Bhu Sona (Orange pulp)",
+      "Bhu Krishna (Purple pulp)",
+      "Local Red Skin"
+    ],
+    "quantity": 10900,
+    "unit": "kg",
+    "pricePerUnit": 32,
+    "minPrice": 22,
+    "maxPrice": 45,
+    "harvestDate": "2026-09-14",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 60,
+    "coldStorageTemp": "13°C - 15°C (Well cured)",
+    "description": "Carotene-dense sweet tubers, washed and cured with spotless skin, sweet creamy texture when baked or boiled.",
+    "location": {
+      "district": "Mandya",
+      "state": "Odisha",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 562,
+    "createdAt": "2026-09-21T22:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_tapioca",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Farm Fresh Tapioca / Cassava (MVD 1)",
+    "cropId": "tapioca",
+    "cropName": "Tapioca / Cassava",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "MVD 1",
+    "allVarieties": [
+      "MVD 1",
+      "H 226",
+      "Co 2",
+      "Salem Sago Cassava"
+    ],
+    "quantity": 11550,
+    "unit": "kg",
+    "pricePerUnit": 18,
+    "minPrice": 13,
+    "maxPrice": 25,
+    "harvestDate": "2026-09-13",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 7,
+    "coldStorageTemp": "Ambient processed / refrigerated",
+    "description": "High starch root tubers for fresh culinary cooking and industrial sago/sabudana processing plants.",
+    "location": {
+      "district": "Indore",
+      "state": "Tamil",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 599,
+    "createdAt": "2026-09-21T21:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_elephant-foot-yam",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Elephant Foot Yam / Suran (Jimikand) (Gajendra)",
+    "cropId": "elephant-foot-yam",
+    "cropName": "Elephant Foot Yam / Suran (Jimikand)",
+    "category": "Vegetables",
+    "subCategory": "Root Vegetables",
+    "variety": "Gajendra",
+    "allVarieties": [
+      "Gajendra",
+      "Santragachi",
+      "Bidhan Kusum"
+    ],
+    "quantity": 12200,
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "minPrice": 28,
+    "maxPrice": 52,
+    "harvestDate": "2026-09-12",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 90,
+    "coldStorageTemp": "Ventilated dry ambient",
+    "description": "Solid heavy underground corms with low acridity, uniform flesh texture, cured for longevity and culinary roasting.",
+    "location": {
+      "district": "Salem",
+      "state": "Andhra",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 136,
+    "createdAt": "2026-09-21T20:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_ridge-gourd",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Certified Organic Ridge Gourd (Turai / Dodka) (Pusa Nasdar)",
+    "cropId": "ridge-gourd",
+    "cropName": "Ridge Gourd (Turai / Dodka)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Pusa Nasdar",
+    "allVarieties": [
+      "Pusa Nasdar",
+      "Arka Sumeet",
+      "Surekha F1",
+      "Desi Turai"
+    ],
+    "quantity": 12850,
+    "unit": "kg",
+    "pricePerUnit": 35,
+    "minPrice": 24,
+    "maxPrice": 48,
+    "harvestDate": "2026-09-11",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 6,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Tender dark green ridged fruits with spongy interior and high dietary moisture content, harvested tender.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Maharashtra",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 173,
+    "createdAt": "2026-09-21T19:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_snake-gourd",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Farm Fresh Snake Gourd (Chichinda) (CO 1)",
+    "cropId": "snake-gourd",
+    "cropName": "Snake Gourd (Chichinda)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "CO 1",
+    "allVarieties": [
+      "CO 1",
+      "PKM 1",
+      "Baby White",
+      "Green Striped Long"
+    ],
+    "quantity": 13500,
+    "unit": "kg",
+    "pricePerUnit": 30,
+    "minPrice": 20,
+    "maxPrice": 42,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 6,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Long slender white-striped gourd fruits rich in cooling juices, low calories, and digestive water-soluble fibers.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Tamil",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1592417817098-8f3d6910985b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 210,
+    "createdAt": "2026-09-21T18:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_ash-gourd",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Ash Gourd (Petha / Safed Kaddu) (Pusa Ujjwal)",
+    "cropId": "ash-gourd",
+    "cropName": "Ash Gourd (Petha / Safed Kaddu)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Pusa Ujjwal",
+    "allVarieties": [
+      "Pusa Ujjwal",
+      "KAU Local",
+      "Agra Petha White"
+    ],
+    "quantity": 14150,
+    "unit": "kg",
+    "pricePerUnit": 18,
+    "minPrice": 12,
+    "maxPrice": 26,
+    "harvestDate": "2026-09-23",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 90,
+    "coldStorageTemp": "13°C - 15°C (Long room ambient shelf life)",
+    "description": "Chalky white wax coated large gourds, primary ingredient for famous Agra Petha sweets and Ayurvedic cooling tonics.",
+    "location": {
+      "district": "Warangal",
+      "state": "Uttar",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1508747703725-719777637510?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 247,
+    "createdAt": "2026-09-21T17:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_sponge-gourd",
+    "farmerId": "user_farmer_1",
+    "farmerName": "Ramesh Patel",
+    "farmerRating": 4.9,
+    "title": "Certified Organic Sponge Gourd (Gilki / Nenua) (Pusa Chikni)",
+    "cropId": "sponge-gourd",
+    "cropName": "Sponge Gourd (Gilki / Nenua)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Pusa Chikni",
+    "allVarieties": [
+      "Pusa Chikni",
+      "Kashi Divya",
+      "Desi Gilki"
+    ],
+    "quantity": 14800,
+    "unit": "kg",
+    "pricePerUnit": 32,
+    "minPrice": 22,
+    "maxPrice": 45,
+    "harvestDate": "2026-09-22",
+    "qualityGrade": "Export Grade",
+    "isOrganic": true,
+    "shelfLifeDays": 5,
+    "coldStorageTemp": "10°C - 12°C",
+    "description": "Smooth, cylindrical green tender gourd with sweet delicate flesh, soft seeds, and easy digestability.",
+    "location": {
+      "district": "Nashik",
+      "state": "Bihar",
+      "coordinates": [
+        20.076,
+        74.108
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 284,
+    "createdAt": "2026-09-21T16:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_zucchini",
+    "farmerId": "user_farmer_2",
+    "farmerName": "Sardar Balwinder Singh",
+    "farmerRating": 4.95,
+    "title": "Farm Fresh Zucchini / Courgette (Dark Green F1)",
+    "cropId": "zucchini",
+    "cropName": "Zucchini / Courgette",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Dark Green F1",
+    "allVarieties": [
+      "Dark Green F1",
+      "Yellow Gold F1",
+      "Round Zucchini"
+    ],
+    "quantity": 15450,
+    "unit": "kg",
+    "pricePerUnit": 75,
+    "minPrice": 50,
+    "maxPrice": 110,
+    "harvestDate": "2026-09-21",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 10,
+    "coldStorageTemp": "7°C - 10°C (95% RH)",
+    "description": "Glossy tender exotic summer squash with thin edible skin, uniform 6-8 inch length, favored by continental kitchens.",
+    "location": {
+      "district": "Karnal",
+      "state": "Himachal",
+      "coordinates": [
+        29.685,
+        76.99
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 321,
+    "createdAt": "2026-09-21T15:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_muskmelon",
+    "farmerId": "user_farmer_3",
+    "farmerName": "Shivappa Gowda",
+    "farmerRating": 4.85,
+    "title": "Farm Fresh Muskmelon (Kharbooja) (Hara Madhu)",
+    "cropId": "muskmelon",
+    "cropName": "Muskmelon (Kharbooja)",
+    "category": "Vegetables",
+    "subCategory": "Cucurbit Vegetables",
+    "variety": "Hara Madhu",
+    "allVarieties": [
+      "Hara Madhu",
+      "Kundan",
+      "Durgapura Madhu",
+      "Cantaloupe Yellow"
+    ],
+    "quantity": 4100,
+    "unit": "kg",
+    "pricePerUnit": 28,
+    "minPrice": 18,
+    "maxPrice": 38,
+    "harvestDate": "2026-09-20",
+    "qualityGrade": "Grade A+",
+    "isOrganic": false,
+    "shelfLifeDays": 12,
+    "coldStorageTemp": "5°C - 7°C",
+    "description": "Netted rind melons with aromatic salmon-orange juicy flesh, high natural brix (11°+) sweetness and honey fragrance.",
+    "location": {
+      "district": "Mandya",
+      "state": "Punjab",
+      "coordinates": [
+        12.522,
+        76.898
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598025362874-49480e049c76?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 358,
+    "createdAt": "2026-09-21T14:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_knol-khol",
+    "farmerId": "user_farmer_4",
+    "farmerName": "Rajesh Sharma",
+    "farmerRating": 4.8,
+    "title": "Certified Organic Knol-Khol / Kohlrabi (Ganth Gobhi) (White Vienna)",
+    "cropId": "knol-khol",
+    "cropName": "Knol-Khol / Kohlrabi (Ganth Gobhi)",
+    "category": "Vegetables",
+    "subCategory": "Cole Crops",
+    "variety": "White Vienna",
+    "allVarieties": [
+      "White Vienna",
+      "Purple Vienna",
+      "King of Market"
+    ],
+    "quantity": 4750,
+    "unit": "kg",
+    "pricePerUnit": 26,
+    "minPrice": 18,
+    "maxPrice": 36,
+    "harvestDate": "2026-09-19",
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "shelfLifeDays": 20,
+    "coldStorageTemp": "0°C - 2°C (95% RH)",
+    "description": "Crisp swollen edible stems resembling cabbage turnip, sweet peppery crunch popular in North and East Indian curries.",
+    "location": {
+      "district": "Indore",
+      "state": "Jammu",
+      "coordinates": [
+        22.719,
+        75.857
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 395,
+    "createdAt": "2026-09-21T13:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_brussels-sprouts",
+    "farmerId": "user_farmer_5",
+    "farmerName": "Senthil Kumar",
+    "farmerRating": 4.9,
+    "title": "Farm Fresh Brussels Sprouts (Oliver F1)",
+    "cropId": "brussels-sprouts",
+    "cropName": "Brussels Sprouts",
+    "category": "Vegetables",
+    "subCategory": "Cole Crops",
+    "variety": "Oliver F1",
+    "allVarieties": [
+      "Oliver F1",
+      "Diablo",
+      "Jade Cross"
+    ],
+    "quantity": 5400,
+    "unit": "kg",
+    "pricePerUnit": 120,
+    "minPrice": 90,
+    "maxPrice": 160,
+    "harvestDate": "2026-09-18",
+    "qualityGrade": "Export Grade",
+    "isOrganic": false,
+    "shelfLifeDays": 14,
+    "coldStorageTemp": "0°C - 1°C (95% RH)",
+    "description": "Compact miniature gem cabbage buds, harvested tightly closed, high glucosinolates and gourmet culinary appeal.",
+    "location": {
+      "district": "Salem",
+      "state": "Himachal",
+      "coordinates": [
+        11.664,
+        78.146
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 432,
+    "createdAt": "2026-09-21T12:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_cluster-beans",
+    "farmerId": "user_farmer_6",
+    "farmerName": "Amit Bishnoi",
+    "farmerRating": 4.75,
+    "title": "Farm Fresh Cluster Beans (Gwar Phali) (Pusa Navbahar)",
+    "cropId": "cluster-beans",
+    "cropName": "Cluster Beans (Gwar Phali)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "Pusa Navbahar",
+    "allVarieties": [
+      "Pusa Navbahar",
+      "HG 365",
+      "RGC 936",
+      "Desi Gwar"
+    ],
+    "quantity": 6050,
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "minPrice": 26,
+    "maxPrice": 52,
+    "harvestDate": "2026-09-17",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 6,
+    "coldStorageTemp": "7°C - 10°C",
+    "description": "Tender green stringless cluster pods, high natural guar gum soluble fiber for diabetes control and vegetable stir-fries.",
+    "location": {
+      "district": "Jodhpur",
+      "state": "Rajasthan",
+      "coordinates": [
+        26.238,
+        73.024
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1592417817098-8f3d6910985b?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 469,
+    "createdAt": "2026-09-21T11:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_broad-beans",
+    "farmerId": "user_farmer_7",
+    "farmerName": "Debashis Roy",
+    "farmerRating": 4.88,
+    "title": "Certified Organic Broad Beans (Bakla / Fava) (Pusa Sumeet)",
+    "cropId": "broad-beans",
+    "cropName": "Broad Beans (Bakla / Fava)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "Pusa Sumeet",
+    "allVarieties": [
+      "Pusa Sumeet",
+      "Local White Seed",
+      "Windsor"
+    ],
+    "quantity": 6700,
+    "unit": "kg",
+    "pricePerUnit": 42,
+    "minPrice": 30,
+    "maxPrice": 58,
+    "harvestDate": "2026-09-16",
+    "qualityGrade": "Grade A+",
+    "isOrganic": true,
+    "shelfLifeDays": 7,
+    "coldStorageTemp": "4°C - 6°C",
+    "description": "Plump leathery pods with large nutty tender seeds loaded with L-dopa, folate, and rich dietary protein.",
+    "location": {
+      "district": "Burdwan",
+      "state": "Uttar",
+      "coordinates": [
+        23.232,
+        87.861
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 506,
+    "createdAt": "2026-09-21T10:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "crop_spring-onion",
+    "farmerId": "user_farmer_8",
+    "farmerName": "Venkat Reddy",
+    "farmerRating": 4.92,
+    "title": "Farm Fresh Spring Onion / Green Onion (Hara Pyaz) (White Lisbon)",
+    "cropId": "spring-onion",
+    "cropName": "Spring Onion / Green Onion (Hara Pyaz)",
+    "category": "Vegetables",
+    "subCategory": "Beans & Other Vegetables",
+    "variety": "White Lisbon",
+    "allVarieties": [
+      "White Lisbon",
+      "Nasik Red Bunching",
+      "Pusa White Flat Bunching"
+    ],
+    "quantity": 7350,
+    "unit": "kg",
+    "pricePerUnit": 36,
+    "minPrice": 24,
+    "maxPrice": 50,
+    "harvestDate": "2026-09-15",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "shelfLifeDays": 4,
+    "coldStorageTemp": "1°C - 3°C (98% RH)",
+    "description": "Crisp succulent hollow green scapes with small sweet white bulb bases, pre-washed and bundled for Asian and salad cuisines.",
+    "location": {
+      "district": "Warangal",
+      "state": "Maharashtra",
+      "coordinates": [
+        17.968,
+        79.594
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=700",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 543,
+    "createdAt": "2026-09-21T09:47:03.833Z",
+    "updatedAt": "2026-09-24T16:47:03.833Z"
+  },
+  {
+    "id": "agx_1790286931104_ow99dm",
+    "createdAt": "2026-09-24T21:55:31.104Z",
+    "updatedAt": "2026-09-24T21:55:31.104Z",
+    "farmerId": "farmer_pub_mug2m4yo",
+    "farmerName": "Ramesh Patil (Solapur)",
+    "farmerRating": 4.9,
+    "title": "Public Certified Organic Pomegranate",
+    "category": "Fruits",
+    "variety": "Bhagwa Red",
+    "quantity": 500,
+    "unit": "kg",
+    "pricePerUnit": 120,
+    "minPrice": 105,
+    "harvestDate": "2026-09-24",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "description": "High quality, freshly harvested Public Certified Organic Pomegranate.",
+    "location": {
+      "district": "Solapur",
+      "state": "Maharashtra"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 1
+  }
+]

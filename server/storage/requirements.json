@@ -1,0 +1,23 @@
+[
+  {
+    "id": "req_1",
+    "createdAt": "2026-09-24T13:45:05.093Z",
+    "updatedAt": "2026-09-24T13:45:05.093Z",
+    "buyerId": "user_buyer_1",
+    "buyerName": "FreshDirect Wholesale",
+    "cropName": "Red Onions",
+    "category": "Vegetables",
+    "quantity": 3000,
+    "unit": "kg",
+    "maxPrice": 30,
+    "qualityGrade": "Grade A",
+    "isOrganic": true,
+    "location": {
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    "deliveryDate": "2026-10-02",
+    "status": "ACTIVE",
+    "matchedFarmerCount": 3
+  }
+]

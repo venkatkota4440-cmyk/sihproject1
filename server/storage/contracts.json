@@ -1,0 +1,30 @@
+[
+  {
+    "id": "contract_demo_201",
+    "createdAt": "2026-09-24T13:45:05.094Z",
+    "updatedAt": "2026-09-24T13:45:05.094Z",
+    "orderId": "order_demo_301",
+    "offerId": "offer_demo_101",
+    "contractNumber": "AGX-CTR-2026-0924-001",
+    "farmerDetails": {
+      "name": "Ramesh Patel",
+      "phone": "+91 98220 12345",
+      "location": "Niphad, Nashik, Maharashtra"
+    },
+    "buyerDetails": {
+      "name": "FreshDirect Wholesale",
+      "phone": "+91 91670 98765",
+      "location": "Vashi, Navi Mumbai, Maharashtra"
+    },
+    "cropDetails": {
+      "crop": "Premium Nashik Red Onions",
+      "variety": "Garwa / N-53 Red",
+      "quantity": "2,000 kg",
+      "agreedRate": "₹27.00 per kg",
+      "totalAmount": 54000
+    },
+    "terms": "1. Quality parameters confirm to FSSAI & NPOP Grade A standards. 2. Demo payment held in mock escrow until digital OTP verification at delivery. 3. Dispute resolution via AgriNex Arbitrary Board.",
+    "signedAt": "2026-09-24T08:45:05.094Z",
+    "status": "EXECUTED"
+  }
+]

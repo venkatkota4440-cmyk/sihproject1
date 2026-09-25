@@ -1,0 +1,59 @@
+[
+  {
+    "id": "audit_1",
+    "createdAt": "2026-09-24T13:45:05.098Z",
+    "updatedAt": "2026-09-24T13:45:05.098Z",
+    "action": "SYSTEM_INITIALIZATION",
+    "performedBy": "SYSTEM",
+    "details": "Initial database seed completed with 4 role accounts, 8 crops, and live demo order.",
+    "timestamp": "2026-09-24T13:45:05.098Z"
+  },
+  {
+    "id": "agx_1790281970408_hpou22",
+    "createdAt": "2026-09-24T20:32:50.408Z",
+    "updatedAt": "2026-09-24T20:32:50.408Z",
+    "action": "USER_REGISTERED",
+    "performedBy": "agx_1790281970406_t5pgvx",
+    "details": "User Balaji Rao registered with role BUYER"
+  },
+  {
+    "id": "agx_1790286931106_ga0hjx",
+    "createdAt": "2026-09-24T21:55:31.106Z",
+    "updatedAt": "2026-09-24T21:55:31.106Z",
+    "action": "CROP_LISTED",
+    "performedBy": "farmer_pub_mug2m4yo",
+    "details": "New crop \"Public Certified Organic Pomegranate\" listed by Ramesh Patil (Solapur) (agx_1790286931104_ow99dm)"
+  },
+  {
+    "id": "agx_1790339214267_ticbyz",
+    "createdAt": "2026-09-25T12:26:54.267Z",
+    "updatedAt": "2026-09-25T12:26:54.267Z",
+    "action": "USER_REGISTERED",
+    "performedBy": "agx_1790339214265_q929vk",
+    "details": "User Farmer Ramdas 4145 registered successfully with role FARMER"
+  },
+  {
+    "id": "agx_1790339214408_trujmn",
+    "createdAt": "2026-09-25T12:26:54.408Z",
+    "updatedAt": "2026-09-25T12:26:54.408Z",
+    "action": "USER_REGISTERED",
+    "performedBy": "agx_1790339214407_drntbw",
+    "details": "User Direct Wholesale Hub 4145 registered successfully with role BUYER"
+  },
+  {
+    "id": "agx_1790342181515_jc546p",
+    "createdAt": "2026-09-25T13:16:21.515Z",
+    "updatedAt": "2026-09-25T13:16:21.515Z",
+    "action": "USER_REGISTERED",
+    "performedBy": "agx_1790342181512_gaezhv",
+    "details": "User Kisan Ramesh 1790342181423 registered successfully with role FARMER"
+  },
+  {
+    "id": "agx_1790342181600_dtk2tu",
+    "createdAt": "2026-09-25T13:16:21.600Z",
+    "updatedAt": "2026-09-25T13:16:21.600Z",
+    "action": "USER_REGISTERED",
+    "performedBy": "agx_1790342181598_9ztewh",
+    "details": "User Retail Agro Corp 1790342181423 registered successfully with role BUYER"
+  }
+]
