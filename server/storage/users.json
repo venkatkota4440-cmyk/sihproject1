@@ -2,7 +2,7 @@
   {
     "id": "user_farmer_1",
     "createdAt": "2026-09-24T13:45:05.052Z",
-    "updatedAt": "2026-09-25T14:20:48.793Z",
+    "updatedAt": "2026-09-25T16:30:25.796Z",
     "name": "Ramesh Patel",
     "email": "farmer@agrinex.com",
     "phone": "+91 98220 12345",
@@ -35,12 +35,12 @@
     "rating": 4.9,
     "reviewsCount": 38,
     "isVerified": true,
-    "tourCompleted": false,
-    "tourSkipped": true,
+    "tourCompleted": true,
+    "tourSkipped": false,
     "onboardingCompleted": true,
     "preferredLanguage": "en-IN",
     "phoneVerified": true,
-    "lastLoginAt": "2026-09-25T14:20:48.793Z"
+    "lastLoginAt": "2026-09-25T15:46:19.314Z"
   },
   {
     "id": "user_buyer_1",
@@ -104,7 +104,7 @@
   {
     "id": "user_admin_1",
     "createdAt": "2026-09-24T13:45:05.060Z",
-    "updatedAt": "2026-09-24T19:08:20.857Z",
+    "updatedAt": "2026-09-25T17:11:50.147Z",
     "name": "AgriNex Admin",
     "email": "admin@agrinex.com",
     "phone": "+91 98000 00000",
@@ -122,8 +122,8 @@
     "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
     "verificationStatus": "VERIFIED",
     "isVerified": true,
-    "tourCompleted": true,
-    "tourSkipped": false,
+    "tourCompleted": false,
+    "tourSkipped": true,
     "onboardingCompleted": true,
     "preferredLanguage": "en-IN"
   },

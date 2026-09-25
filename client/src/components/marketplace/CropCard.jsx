@@ -21,17 +21,34 @@ export default function CropCard({ crop, onMakeOffer, buyerLocation }) {
     ? crop.images[0]
     : fallbackPlaceholder;
 
+  const mandiModal = Number(crop.mandiBenchmark || crop.liveMarketPrice?.modalPrice || 26.5);
+  const mandiQtl = Number(crop.mandiPricePerQuintal || (mandiModal * 100));
+  const farmPrice = Number(crop.pricePerUnit || 0);
+  const farmPriceQtl = farmPrice * 100;
+  const savingsPerKg = mandiModal - farmPrice;
+  const marketName = crop.liveMarketPrice?.market || 'Regional APMC Hub';
+
   return (
-    <div className="glass-card card-hover-depth" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        background: '#ffffff',
+        border: '1px solid #e2e8f0',
+        borderRadius: '6px',
+        overflow: 'hidden',
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
+        transition: 'border-color 0.15s ease, box-shadow 0.15s ease'
+      }}
+    >
       {/* Crop Image Header */}
-      <div style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden', background: '#1e293b' }}>
+      <div style={{ position: 'relative', width: '100%', height: '170px', overflow: 'hidden', background: '#f1f5f9', borderBottom: '1px solid #e2e8f0' }}>
         <img
           src={primaryImage}
           alt={crop.title || 'Agricultural Crop'}
           loading="lazy"
           onError={() => setImgError(true)}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          className="crop-card-img"
         />
 
         {imgError && (
@@ -39,236 +56,198 @@ export default function CropCard({ crop, onMakeOffer, buyerLocation }) {
             position: 'absolute',
             bottom: '8px',
             left: '8px',
-            background: 'rgba(0,0,0,0.7)',
-            color: '#f87171',
+            background: 'rgba(15, 23, 42, 0.85)',
+            color: '#ffffff',
             padding: '2px 8px',
             borderRadius: '4px',
-            fontSize: '0.65rem',
+            fontSize: '0.6875rem',
             display: 'flex',
             alignItems: 'center',
             gap: '4px'
           }}>
-            <ImageOff size={10} /> Crop image unavailable (safe placeholder)
+            <ImageOff size={11} /> Photo unavailable
           </div>
         )}
 
-        {/* Badges Overlay */}
-        <div style={{ position: 'absolute', top: '12px', left: '12px', display: 'flex', gap: '6px' }}>
-          {crop.isOrganic && (
-            <span className="badge badge-success" style={{ boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)' }}>
-              <Sparkles size={11} /> Organic
-            </span>
-          )}
-          <span className="badge badge-neutral" style={{ backdropFilter: 'blur(8px)', background: 'rgba(0,0,0,0.5)', color: '#ffffff', borderColor: 'rgba(255,255,255,0.2)' }}>
+        {/* Quality Grade & Certification Badges */}
+        <div style={{ position: 'absolute', top: '10px', left: '10px', display: 'flex', gap: '5px' }}>
+          <span style={{
+            background: '#0f172a',
+            color: '#ffffff',
+            fontSize: '0.6875rem',
+            fontWeight: 700,
+            padding: '2px 8px',
+            borderRadius: '3px'
+          }}>
             {crop.qualityGrade || 'Grade A'}
           </span>
+          {crop.isOrganic && (
+            <span style={{
+              background: '#166534',
+              color: '#ffffff',
+              fontSize: '0.6875rem',
+              fontWeight: 700,
+              padding: '2px 8px',
+              borderRadius: '3px'
+            }}>
+              Certified Organic
+            </span>
+          )}
         </div>
 
-        {/* Top Right Quick Add to Cart Badge */}
-        <button
-          type="button"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            addToCart(crop, 500);
-          }}
-          style={{
-            position: 'absolute',
-            top: '12px',
-            right: '12px',
-            width: '36px',
-            height: '36px',
-            borderRadius: '50%',
-            background: isInCart ? '#10b981' : 'rgba(9, 13, 22, 0.85)',
-            border: '1px solid rgba(255, 255, 255, 0.25)',
-            color: '#ffffff',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            backdropFilter: 'blur(6px)',
-            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.35)',
-            transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
-          }}
-          title={isInCart ? 'Already in Procurement Cart (Click to add +500kg)' : 'Quick Add 500kg to Procurement Cart'}
-          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.12)'}
-          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-        >
-          <ShoppingCart size={16} />
-        </button>
-
-        {crop.farmerRating && (
-          <div style={{
-            position: 'absolute',
-            bottom: '10px',
-            right: '12px',
-            background: 'rgba(0, 0, 0, 0.75)',
-            backdropFilter: 'blur(6px)',
-            color: '#fbbf24',
-            padding: '3px 8px',
-            borderRadius: '20px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '4px',
-            fontSize: '0.75rem',
-            fontWeight: 700,
-            border: '1px solid rgba(251, 191, 36, 0.3)'
-          }}>
-            <Star size={12} fill="#fbbf24" /> {crop.farmerRating}
-          </div>
-        )}
+        {/* Available Lot Badge */}
+        <div style={{
+          position: 'absolute',
+          bottom: '8px',
+          right: '8px',
+          background: 'rgba(15, 23, 42, 0.9)',
+          color: '#ffffff',
+          padding: '3px 8px',
+          borderRadius: '3px',
+          fontSize: '0.72rem',
+          fontWeight: 700
+        }}>
+          {Number(crop.quantity).toLocaleString('en-IN')} {crop.unit || 'kg'} available
+        </div>
       </div>
 
       {/* Card Body */}
-      <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', flex: 1, gap: '8px' }}>
+      <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', flex: 1, gap: '8px' }}>
         <div>
-          <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--color-primary-600)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-            {crop.category} • {crop.variety || 'Standard'}
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#166534', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            {crop.category} • {crop.variety || 'Standard Variety'}
           </div>
-          <h3 style={{ fontSize: '1.0625rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '2px', lineHeight: 1.3 }}>
+          <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#0f172a', marginTop: '2px', lineHeight: 1.3 }}>
             {crop.title}
           </h3>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '6px', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
+        {/* Location & Mandi Hub */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '6px', fontSize: '0.8125rem', color: '#475569' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            <MapPin size={14} color="#10b981" style={{ flexShrink: 0 }} />
-            <span>{crop.location ? `${crop.location.district || crop.location}, ${crop.location.state || ''}` : 'Maharashtra'}</span>
+            <MapPin size={14} color="#166534" style={{ flexShrink: 0 }} />
+            <span>{crop.location ? `${crop.location.district || crop.location}, ${crop.location.state || ''}` : 'Nashik, Maharashtra'}</span>
           </div>
           {distanceKm !== null && (
-            <span
-              style={{
-                flexShrink: 0,
-                fontSize: '0.7rem',
-                fontWeight: 700,
-                color: '#0284c7',
-                background: 'rgba(2, 132, 199, 0.12)',
-                padding: '2px 6px',
-                borderRadius: '6px',
-                border: '1px solid rgba(2, 132, 199, 0.25)',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '2px'
-              }}
-              title={`Calculated from your live GPS location: ${distanceKm} km`}
-            >
-              📍 {formatDistance(distanceKm)}
+            <span style={{
+              flexShrink: 0,
+              fontSize: '0.7rem',
+              fontWeight: 700,
+              color: '#0369a1',
+              background: '#f0f9ff',
+              border: '1px solid #bae6fd',
+              padding: '1px 6px',
+              borderRadius: '3px'
+            }}>
+              Dist: {formatDistance(distanceKm)}
             </span>
           )}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
-          <span>Farmer:</span>
-          <span style={{ fontWeight: 600, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '3px' }}>
+        {/* Producer / Farmer Details */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.8125rem', color: '#64748b' }}>
+          <span>Producer:</span>
+          <span style={{ fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '3px' }}>
             {crop.farmerName || 'Verified Producer'}
-            <ShieldCheck size={14} color="#10b981" />
+            <ShieldCheck size={14} color="#166534" title="Identity & Land Record Verified" />
           </span>
         </div>
 
-        {/* Live Marketing Prices & Pricing Comparison */}
-        {(() => {
-          const mandiModal = Number(crop.mandiBenchmark || crop.liveMarketPrice?.modalPrice || 26.5);
-          const mandiQtl = Number(crop.mandiPricePerQuintal || (mandiModal * 100));
-          const farmPrice = Number(crop.pricePerUnit || 0);
-          const savingsPerKg = mandiModal - farmPrice;
-          const savingsPct = mandiModal > 0 ? Math.round((savingsPerKg / mandiModal) * 100) : 0;
-          const marketName = crop.liveMarketPrice?.market || 'Regional APMC Hub';
+        {/* Official Mandi vs Direct Farm Gate Price Comparison Box */}
+        <div style={{
+          marginTop: 'auto',
+          background: '#f8fafc',
+          border: '1px solid #e2e8f0',
+          borderRadius: '4px',
+          padding: '10px 12px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px'
+        }}>
+          {/* APMC Mandi Benchmark */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: '#64748b' }}>
+            <span>APMC Mandi Benchmark:</span>
+            <span style={{ fontWeight: 600, color: '#0f172a' }}>
+              ₹{mandiModal.toFixed(2)}/kg <span style={{ color: '#94a3b8', fontWeight: 500 }}>(₹{mandiQtl.toLocaleString('en-IN')}/Qtl)</span>
+            </span>
+          </div>
 
-          return (
-            <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {/* Mandi vs Farm Gate Comparison Strip */}
-              <div style={{
-                background: 'rgba(16, 185, 129, 0.08)',
-                border: '1px solid rgba(16, 185, 129, 0.2)',
-                borderRadius: '8px',
-                padding: '6px 8px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                fontSize: '0.72rem'
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#059669', fontWeight: 700 }}>
-                  <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10b981', display: 'inline-block' }} />
-                  <span>APMC Live: ₹{mandiModal.toFixed(1)}/kg</span>
-                  <span style={{ color: 'var(--text-muted)', fontWeight: 500 }}>(₹{mandiQtl}/Qtl)</span>
-                </div>
-                {savingsPerKg > 0 ? (
-                  <span style={{
-                    color: '#15803d',
-                    fontWeight: 800,
-                    background: 'rgba(34, 197, 94, 0.18)',
-                    padding: '1px 6px',
-                    borderRadius: '4px'
-                  }}>
-                    Save ₹{savingsPerKg.toFixed(1)}/kg ({savingsPct}%)
-                  </span>
-                ) : (
-                  <span style={{
-                    color: '#b45309',
-                    fontWeight: 700,
-                    background: 'rgba(245, 158, 11, 0.15)',
-                    padding: '1px 6px',
-                    borderRadius: '4px'
-                  }}>
-                    Grade-A Quality
-                  </span>
-                )}
-              </div>
-
-              {/* Pricing & Stock */}
-              <div style={{
-                paddingTop: '6px',
-                borderTop: '1px solid var(--border-color)',
-                display: 'flex',
-                alignItems: 'baseline',
-                justifyContent: 'space-between'
-              }}>
-                <div>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Farm Gate Direct Price</div>
-                  <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                    ₹{crop.pricePerUnit} <span style={{ fontSize: '0.8125rem', fontWeight: 500, color: 'var(--text-muted)' }}>/ {crop.unit || 'kg'}</span>
-                  </div>
-                  <div style={{ fontSize: '0.6875rem', color: 'var(--text-muted)', marginTop: '1px' }}>
-                    Mandi: {marketName}
-                  </div>
-                </div>
-
-                <div style={{ textAlign: 'right' }}>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{t('marketplace.availableQuantity', 'Available')}</div>
-                  <div style={{ fontSize: '0.9375rem', fontWeight: 700, color: '#059669' }}>
-                    {Number(crop.quantity).toLocaleString('en-IN')} {crop.unit || 'kg'}
-                  </div>
-                </div>
+          {/* Farm Gate Asking Rate */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', paddingTop: '4px', borderTop: '1px dashed #cbd5e1' }}>
+            <div>
+              <span style={{ fontSize: '0.72rem', color: '#64748b', display: 'block' }}>Farm Gate Asking Price:</span>
+              <div style={{ fontSize: '1.2rem', fontWeight: 800, color: '#166534', lineHeight: 1.1 }}>
+                ₹{farmPrice.toFixed(2)} <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#475569' }}>/ {crop.unit || 'kg'}</span>
               </div>
             </div>
-          );
-        })()}
+            <div style={{ textAlign: 'right' }}>
+              <span style={{ fontSize: '0.6875rem', color: '#64748b', display: 'block' }}>Per Quintal:</span>
+              <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#0f172a' }}>
+                ₹{farmPriceQtl.toLocaleString('en-IN')}
+              </span>
+            </div>
+          </div>
 
-        {/* Action Buttons: Details, Add to Cart & Make Offer */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '12px' }}>
+          {/* Savings / Advantage Label */}
+          {savingsPerKg > 0 && (
+            <div style={{
+              fontSize: '0.7rem',
+              fontWeight: 700,
+              color: '#166534',
+              background: '#ecfdf5',
+              padding: '2px 6px',
+              borderRadius: '3px',
+              textAlign: 'center'
+            }}>
+              Direct procurement savings: ₹{savingsPerKg.toFixed(2)}/kg vs APMC spot rate
+            </div>
+          )}
+        </div>
+
+        {/* Action Buttons: Add to Cart & Make Offer */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px' }}>
           <button
             type="button"
             onClick={() => addToCart(crop, 500)}
-            className="btn btn-secondary btn-sm"
             style={{
-              width: '100%',
-              justifyContent: 'center',
+              padding: '7px 10px',
+              fontSize: '0.8125rem',
               fontWeight: 700,
-              background: isInCart ? 'rgba(16, 185, 129, 0.15)' : 'var(--bg-muted)',
-              borderColor: isInCart ? '#10b981' : 'var(--border-color)',
-              color: isInCart ? '#10b981' : 'var(--text-main)'
+              borderRadius: '4px',
+              border: '1px solid #166534',
+              background: isInCart ? '#ecfdf5' : '#ffffff',
+              color: '#166534',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '5px'
             }}
           >
-            <ShoppingCart size={14} /> {isInCart ? 'In Cart (+)' : 'Add to Cart'}
+            <ShoppingCart size={14} />
+            <span>{isInCart ? 'In Cart (+)' : 'Add to Cart'}</span>
           </button>
 
           <button
             type="button"
             onClick={() => onMakeOffer && onMakeOffer(crop)}
-            className="btn btn-primary btn-sm"
-            style={{ width: '100%', justifyContent: 'center', fontWeight: 700 }}
+            style={{
+              padding: '7px 10px',
+              fontSize: '0.8125rem',
+              fontWeight: 700,
+              borderRadius: '4px',
+              border: '1px solid #166534',
+              background: '#166534',
+              color: '#ffffff',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '5px'
+            }}
           >
-            <Tag size={14} /> {t('marketplace.makeOffer', 'Make Offer')}
+            <Tag size={14} />
+            <span>Make Offer</span>
           </button>
         </div>
 
@@ -277,15 +256,16 @@ export default function CropCard({ crop, onMakeOffer, buyerLocation }) {
           style={{
             textAlign: 'center',
             fontSize: '0.75rem',
-            color: 'var(--text-muted)',
+            color: '#475569',
             textDecoration: 'none',
-            padding: '4px 0',
-            fontWeight: 600
+            paddingTop: '6px',
+            fontWeight: 600,
+            display: 'block'
           }}
-          onMouseEnter={(e) => e.currentTarget.style.color = '#10b981'}
-          onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+          onMouseEnter={(e) => e.currentTarget.style.color = '#166534'}
+          onMouseLeave={(e) => e.currentTarget.style.color = '#475569'}
         >
-          View Full Harvest Specifications →
+          View Harvest Specifications & Mandi History →
         </Link>
       </div>
     </div>

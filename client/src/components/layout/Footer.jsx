@@ -74,163 +74,113 @@ export default function Footer() {
 
   return (
     <footer style={{
-      background: 'var(--bg-surface)',
-      borderTop: '1px solid var(--border-color)',
-      padding: '50px 0 24px',
+      background: '#f8fafc',
+      borderTop: '1px solid #e2e8f0',
+      padding: '44px 0 24px',
       marginTop: 'auto',
-      transition: 'background-color 0.25s ease, border-color 0.25s ease'
+      color: '#334155'
     }}>
       <div className="container">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-4 gap-8" style={{ marginBottom: '36px' }}>
+        <div className="grid grid-cols-4 gap-8" style={{ marginBottom: '32px' }}>
           {/* Brand info */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <div style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '12px',
-                background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+                width: '34px',
+                height: '34px',
+                borderRadius: '6px',
+                background: '#166534',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#ffffff',
-                boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)'
+                color: '#ffffff'
               }}>
-                <Sprout size={22} />
+                <Sprout size={20} />
               </div>
-              <span style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
-                Agri<span style={{ color: '#10b981' }}>Nex</span>
+              <span style={{ fontSize: '1.25rem', fontWeight: 900, color: '#166534', letterSpacing: '-0.02em' }}>
+                AGRINEX
               </span>
             </div>
-            <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-              From Farm to Buyer — Direct. Trusted. Smart. Eliminating predatory middleman markups with fair pricing, verified trust, and digital escrow.
+            <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: 1.6 }}>
+              Digital Agriculture Marketplace connecting verified farmers, institutional wholesale buyers, and transport logistics with transparent APMC mandi price benchmarks.
             </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8125rem', color: '#059669', fontWeight: 700 }}>
-              <ShieldCheck size={16} /> ISO 27001 & e-NAM Aligned Architecture
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.75rem', color: '#166534', fontWeight: 700 }}>
+              <ShieldCheck size={15} /> Verified Producer Lots & Escrow Trade Protection
             </div>
           </div>
 
-          {/* Platform Links */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div style={{ fontSize: '0.875rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-main)' }}>
+          {/* Marketplace & Price Services */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ fontSize: '0.8125rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#0f172a' }}>
               Marketplace
             </div>
-            <Link to="/marketplace" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Browse All Crops</Link>
-            <Link to="/prices" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Mandi Price Discovery</Link>
-            <Link to="/crop-scanner" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>AI Crop Diagnosis</Link>
-            <Link to="/add-crop" style={{ color: '#10b981', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-              🌱 Public Harvest Listing <ArrowUpRight size={14} />
-            </Link>
+            <Link to="/marketplace" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>Wholesale Harvest Listings</Link>
+            <Link to="/prices" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>Daily Mandi Market Prices</Link>
+            <Link to="/crop-scanner" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>AI Quality Assessment</Link>
+            <Link to="/fleet" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>Cold-Chain Logistics</Link>
           </div>
 
-          {/* Solutions for Roles */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div style={{ fontSize: '0.875rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-main)' }}>
-              For Stakeholders
+          {/* Farmer & Buyer Services */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ fontSize: '0.8125rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#0f172a' }}>
+              Services
             </div>
-            <Link to="/farmer/dashboard" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Farmer Portal</Link>
-            <Link to="/buyer/dashboard" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Wholesale Buyer Portal</Link>
-            <Link to="/transporter/dashboard" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Logistics & Fleet</Link>
-            <Link to="/admin/dashboard" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Admin Regulatory Desk</Link>
+            <Link to="/farmer/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>Farmer Portal</Link>
+            <Link to="/buyer/dashboard" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>Wholesale Buyer Portal</Link>
+            <Link to="/add-crop" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>List Harvest Inventory</Link>
+            <Link to="/tour" style={{ color: '#64748b', textDecoration: 'none', fontSize: '0.8125rem' }}>About Platform</Link>
           </div>
 
-          {/* Public Access Desk */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <div style={{ fontSize: '0.875rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-main)' }}>
-              Direct Harvest Desk
+          {/* Assistance & Helpline */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ fontSize: '0.8125rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#0f172a' }}>
+              Assistance & Transparency
             </div>
-            <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
-              Any farmer or producer can list their harvest lot directly on the public dashboard with zero barrier.
-            </p>
-            <Link to="/add-crop" className="btn btn-primary btn-sm" style={{ width: 'fit-content', marginTop: '4px' }}>
-              🌱 Add Crop Directly
-            </Link>
+            <div style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: 1.5 }}>
+              National Kisan Call Centre Helpline: <strong style={{ color: '#0f172a' }}>1800-180-1551</strong>
+            </div>
+            <div style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+              Mandi data source: Directorate of Marketing & Inspection (DMI) via data.gov.in.
+            </div>
+            <div style={{ fontSize: '0.75rem', color: '#64748b' }}>
+              Daily price updates published after APMC mandi close.
+            </div>
           </div>
         </div>
 
-        {/* Public Social Media Channels Grid */}
+        {/* Legal Disclaimer & Attribution */}
         <div style={{
-          borderTop: '1px solid var(--border-color)',
-          paddingTop: '28px',
-          paddingBottom: '24px'
+          borderTop: '1px solid #e2e8f0',
+          paddingTop: '16px',
+          paddingBottom: '16px',
+          fontSize: '0.75rem',
+          color: '#64748b',
+          lineHeight: 1.5
         }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '14px',
-            marginBottom: '16px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Users size={18} color="#10b981" />
-              <span style={{ fontSize: '0.9375rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
-                Join AgriNex Public Channels & Social Media Network
-              </span>
-              <span className="badge badge-success" style={{ fontSize: '0.625rem', padding: '2px 6px' }}>OFFICIAL VERIFIED</span>
-            </div>
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-              Connecting over 45,000+ Cultivators, APMC Mandi Traders, and Wholesale Sourcing Heads
-            </span>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
-            gap: '12px'
-          }}>
-            {publicSocialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-glass"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '10px 14px',
-                  borderRadius: '12px',
-                  textDecoration: 'none',
-                  border: '1px solid var(--border-color)',
-                  background: 'var(--bg-card)',
-                  color: 'var(--text-main)'
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ color: social.color, display: 'flex', alignItems: 'center' }}>
-                    {social.icon}
-                  </span>
-                  <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left' }}>
-                    <span style={{ fontSize: '0.8125rem', fontWeight: 700, lineHeight: 1.2 }}>{social.name}</span>
-                    <span style={{ fontSize: '0.6875rem', color: 'var(--text-muted)' }}>{social.badge}</span>
-                  </div>
-                </div>
-                <ArrowUpRight size={14} style={{ opacity: 0.6 }} />
-              </a>
-            ))}
-          </div>
+          <strong>Platform Notice:</strong> Agrinex is an independent digital agriculture marketplace connecting farmers, buyers, and logistics providers. Daily mandi benchmark rates are synchronized from official public open data published on data.gov.in by the Directorate of Marketing and Inspection (DMI), Ministry of Agriculture and Farmers Welfare.
         </div>
 
-        {/* Bottom Copyright & Mission */}
+        {/* Bottom Copyright */}
         <div style={{
-          borderTop: '1px solid var(--border-color)',
-          paddingTop: '20px',
+          borderTop: '1px solid #e2e8f0',
+          paddingTop: '16px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           flexWrap: 'wrap',
           gap: '12px',
-          fontSize: '0.8125rem',
-          color: 'var(--text-muted)'
+          fontSize: '0.75rem',
+          color: '#64748b'
         }}>
           <div>
-            © {new Date().getFullYear()} AgriNex Inc. All rights reserved. Direct. Trusted. Smart.
+            © {new Date().getFullYear()} AgriNex. All Rights Reserved.
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-            Empowering Indian Agriculture with <Heart size={14} color="#ef4444" fill="#ef4444" /> and AI Innovation
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <Link to="/tour" style={{ color: '#64748b', textDecoration: 'none' }}>About</Link>
+            <Link to="/tour" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
+            <Link to="/tour" style={{ color: '#64748b', textDecoration: 'none' }}>Terms of Service</Link>
+            <Link to="/tour" style={{ color: '#64748b', textDecoration: 'none' }}>Security</Link>
           </div>
         </div>
       </div>

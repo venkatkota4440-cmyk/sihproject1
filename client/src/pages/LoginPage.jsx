@@ -78,11 +78,11 @@ export default function LoginPage() {
       const res = await login({ identifier, password, role: selectedRole });
       if (res.success) {
         const user = res.data.user;
-        if (user.role === 'FARMER') navigate('/home/farmer');
-        else if (user.role === 'BUYER') navigate('/home/buyer');
+        if (user.role === 'FARMER') navigate('/farmer/dashboard');
+        else if (user.role === 'BUYER') navigate('/buyer/dashboard');
         else if (user.role === 'TRANSPORTER') navigate('/transporter/dashboard');
         else if (user.role === 'ADMIN') navigate('/admin/dashboard');
-        else navigate('/');
+        else navigate('/farmer/dashboard');
       }
     } catch (err) {
       setError(err.message || 'Invalid mobile number, email, or password.');
@@ -137,9 +137,11 @@ export default function LoginPage() {
       const res = await loginWithOtp(otpPhone, otpCode, selectedRole);
       if (res.success) {
         const user = res.data.user;
-        if (user.role === 'FARMER') navigate('/home/farmer');
-        else if (user.role === 'BUYER') navigate('/home/buyer');
-        else navigate('/');
+        if (user.role === 'FARMER') navigate('/farmer/dashboard');
+        else if (user.role === 'BUYER') navigate('/buyer/dashboard');
+        else if (user.role === 'TRANSPORTER') navigate('/transporter/dashboard');
+        else if (user.role === 'ADMIN') navigate('/admin/dashboard');
+        else navigate('/farmer/dashboard');
       }
     } catch (err) {
       setError(err.message || 'Invalid OTP code.');

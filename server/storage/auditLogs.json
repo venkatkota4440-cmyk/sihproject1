@@ -55,5 +55,13 @@
     "action": "USER_REGISTERED",
     "performedBy": "agx_1790342181598_9ztewh",
     "details": "User Retail Agro Corp 1790342181423 registered successfully with role BUYER"
+  },
+  {
+    "id": "agx_1790358110220_zqxffc",
+    "createdAt": "2026-09-25T17:41:50.220Z",
+    "updatedAt": "2026-09-25T17:41:50.220Z",
+    "action": "CROP_LISTED",
+    "performedBy": "farmer_pub_muh8zr4a",
+    "details": "New crop \"Tomato\" listed by Ramesh Kumar (agx_1790358110218_iadrfm)"
   }
 ]

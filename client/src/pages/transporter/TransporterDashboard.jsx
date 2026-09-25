@@ -92,42 +92,44 @@ export default function TransporterDashboard() {
       const res = await api.get(`/orders/${orderId}/receipt`);
       if (res.success) {
         setReceiptData(res.data);
-        setShowReceipt.apply(true);
+        setShowReceipt(true);
       }
     } catch (err) {}
   };
 
   return (
-    <div className="container" style={{ padding: '36px 20px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
+    <div className="container" style={{ padding: '32px 20px', display: 'flex', flexDirection: 'column', gap: '26px' }}>
       {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', borderBottom: '1px solid var(--border-color)', paddingBottom: '20px' }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="badge badge-success">COLD-CHAIN FLEET PARTNER</span>
-            <span className="badge badge-warning">MH-12-QX-4890</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span style={{ background: '#166534', color: '#ffffff', fontSize: '0.6875rem', fontWeight: 800, padding: '3px 8px', borderRadius: '4px', letterSpacing: '0.04em' }}>
+              COLD-CHAIN FLEET PARTNER
+            </span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Vehicle Reg: MH-12-QX-4890</span>
           </div>
-          <h1 style={{ fontSize: '2rem', fontWeight: 800, marginTop: '4px' }}>
-            Transporter Logistics Dashboard
+          <h1 style={{ fontSize: '1.875rem', fontWeight: 800, margin: 0, color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+            Transporter Logistics Dispatch Desk
           </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
-            Refrigerated farm-to-hub transportation dispatch, live telemetry tracking, and OTP delivery handshakes.
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', margin: '4px 0 0' }}>
+            Refrigerated farm-to-terminal transportation manifests, live telemetry tracking, and OTP delivery handshakes.
           </p>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{
-            background: 'var(--bg-muted)',
+            background: 'var(--bg-card)',
             padding: '10px 18px',
-            borderRadius: '12px',
+            borderRadius: '8px',
             border: '1px solid var(--border-color)',
             display: 'flex',
             alignItems: 'center',
-            gap: '8px'
+            gap: '10px'
           }}>
-            <Thermometer size={18} color="#06b6d4" />
+            <Thermometer size={18} color="#166534" />
             <div>
               <div style={{ fontSize: '0.6875rem', color: 'var(--text-muted)' }}>Reefer Temp Setpoint</div>
-              <strong style={{ fontSize: '0.9375rem', color: '#059669' }}>18.0°C (Active)</strong>
+              <strong style={{ fontSize: '0.9375rem', color: '#166534' }}>18.0°C (Active)</strong>
             </div>
           </div>
         </div>
@@ -136,7 +138,7 @@ export default function TransporterDashboard() {
       {loading ? (
         <div style={{ textAlign: 'center', padding: '60px' }}>Loading Logistics Manifests...</div>
       ) : orders.length === 0 ? (
-        <div className="glass-card" style={{ padding: '50px', textAlign: 'center' }}>
+        <div style={{ padding: '50px', textAlign: 'center', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <Truck size={40} color="#94a3b8" style={{ margin: '0 auto 12px' }} />
           <h3>No Active Delivery Assignments</h3>
         </div>
@@ -144,16 +146,16 @@ export default function TransporterDashboard() {
         <div className="grid grid-cols-3 gap-8">
           {/* Left Column: Shipment List */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <h3 style={{ fontSize: '1.05rem', fontWeight: 700 }}>Assigned Shipments ({orders.length})</h3>
+            <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: 0 }}>Assigned Shipments ({orders.length})</h3>
             {orders.map((o) => (
               <div
                 key={o.id}
                 onClick={() => setActiveOrder(o)}
-                className="glass-card"
                 style={{
                   padding: '16px',
                   cursor: 'pointer',
-                  border: activeOrder?.id === o.id ? '2px solid #10b981' : '1px solid var(--border-color)',
+                  borderRadius: '8px',
+                  border: activeOrder?.id === o.id ? '2px solid #166534' : '1px solid var(--border-color)',
                   background: activeOrder?.id === o.id ? 'var(--bg-muted)' : 'var(--bg-card)'
                 }}
               >
@@ -178,7 +180,7 @@ export default function TransporterDashboard() {
           {activeOrder && (
             <div style={{ gridColumn: 'span 2', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {/* Manifest Overview */}
-              <div className="glass-card" style={{ padding: '24px' }}>
+              <div style={{ padding: '24px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
                   <div>
                     <span className="badge badge-warning">IN-TRANSIT REEFER TRIP</span>
@@ -196,7 +198,7 @@ export default function TransporterDashboard() {
                 </div>
 
                 {/* Pickup & Drop Addresses */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', background: 'var(--bg-muted)', padding: '14px', borderRadius: '12px', fontSize: '0.8125rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', background: 'var(--bg-muted)', padding: '14px', borderRadius: '8px', fontSize: '0.8125rem' }}>
                   <div>
                     <span style={{ color: 'var(--text-muted)' }}>Pickup (Farm Gate):</span>
                     <strong style={{ display: 'block', color: 'var(--text-main)', marginTop: '2px' }}>
@@ -243,10 +245,10 @@ export default function TransporterDashboard() {
               </div>
 
               {/* Delivery OTP Handshake Verification Card */}
-              <div className="glass-card" style={{ padding: '24px', borderLeft: '4px solid #10b981' }}>
+              <div style={{ padding: '24px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderLeft: '4px solid #166534', borderRadius: '8px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                  <KeyRound size={22} color="#10b981" />
-                  <h3 style={{ fontSize: '1.15rem', fontWeight: 800 }}>Enter Buyer Delivery OTP to Release Escrow</h3>
+                  <KeyRound size={22} color="#166534" />
+                  <h3 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0 }}>Enter Buyer Delivery OTP to Release Escrow</h3>
                 </div>
                 <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginBottom: '16px' }}>
                   Ask the buyer at the receiving dock for their 6-digit confirmation code (e.g. <code>482915</code> or <code>123456</code>) to verify handover and disburse payment to farmer.

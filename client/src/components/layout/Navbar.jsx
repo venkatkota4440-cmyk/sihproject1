@@ -78,51 +78,65 @@ export default function Navbar() {
       position: 'sticky',
       top: 0,
       zIndex: 40,
-      background: 'var(--nav-bg)',
-      backdropFilter: 'blur(16px)',
-      WebkitBackdropFilter: 'blur(16px)',
+      background: 'var(--bg-surface)',
       borderBottom: '1px solid var(--border-color)',
-      boxShadow: '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-      transition: 'all 0.25s ease'
+      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.04)'
     }}>
-      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '74px' }}>
-        {/* Brand Logo with animated glow */}
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+      {/* Institutional Top Information Strip */}
+      <div style={{
+        background: '#166534',
+        color: '#f0fdf4',
+        fontSize: '0.75rem',
+        padding: '5px 0',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.15)',
+        fontWeight: 600
+      }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ display: 'inline-block', width: '6px', height: '6px', borderRadius: '50%', background: '#86efac' }} />
+            <span>Digital Agriculture Marketplace | Market Information & Farmer Services</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', fontSize: '0.72rem' }}>
+            <span>Daily Mandi Sync (data.gov.in / DMI)</span>
+            <span className="hidden-mobile">Direct Farm-Gate Procurement</span>
+            <span style={{ color: '#fef08a' }}>Kisan Helpline: 1800-180-1551</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '68px' }}>
+        {/* Brand Logo & Institutional Agriculture Header */}
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
           <div style={{
-            width: '44px',
-            height: '44px',
-            borderRadius: '14px',
-            background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+            width: '38px',
+            height: '38px',
+            borderRadius: '6px',
+            background: '#166534',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: '#ffffff',
-            boxShadow: '0 4px 16px rgba(16, 185, 129, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
-            transition: 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
-          }}
-          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.08) rotate(4deg)'}
-          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1) rotate(0deg)'}
-          >
-            <Sprout size={24} />
+            color: '#ffffff'
+          }}>
+            <Sprout size={22} />
           </div>
           <div>
-            <div style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-main)', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              Agri<span className="text-gradient">Nex</span>
+            <div style={{ fontSize: '1.25rem', fontWeight: 900, color: '#166534', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+              AGRINEX
             </div>
-            <div style={{ fontSize: '0.6875rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-              {t('nav.tagline', 'Direct • Trusted • Smart')}
+            <div style={{ fontSize: '0.6875rem', fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+              National Agricultural Marketplace
             </div>
           </div>
         </Link>
 
-        {/* Primary Navigation Links with Pill Hover Highlights */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className="hidden-mobile">
+        {/* Primary Institutional Navigation Links */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '4px' }} className="hidden-mobile">
           {[
-            { to: '/marketplace', label: t('nav.marketplace', 'Marketplace'), icon: Store },
-            { to: '/prices', label: t('nav.priceDiscovery', 'Price Discovery'), icon: TrendingUp, badge: 'AI' },
-            { to: '/payments', label: 'Payments & UPI', icon: ShieldCheck, badge: 'UPI' },
-            { to: '/crop-scanner', label: t('nav.aiCropScanner', 'AI Crop Scanner'), icon: ScanLine },
-            { to: '/fleet', label: 'Live GPS Fleet', icon: Truck, badge: 'LIVE' }
+            { to: '/marketplace', label: 'Marketplace', icon: Store },
+            { to: '/prices', label: 'Market Prices', icon: TrendingUp },
+            { to: '/farmer/dashboard', label: 'Farmer', icon: Sprout },
+            { to: '/buyer/dashboard', label: 'Buyer', icon: ShoppingCart },
+            { to: '/tour', label: 'About', icon: ShieldCheck }
           ].map((item) => {
             const Icon = item.icon;
             const active = isActive(item.to);
@@ -134,44 +148,20 @@ export default function Navbar() {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '6px',
                   textDecoration: 'none',
-                  fontSize: '0.9375rem',
-                  fontWeight: active ? 800 : 600,
-                  color: active ? '#10b981' : 'var(--text-main)',
-                  padding: '8px 16px',
-                  borderRadius: '12px',
-                  background: active ? 'rgba(16, 185, 129, 0.12)' : 'transparent',
-                  border: active ? '1px solid rgba(16, 185, 129, 0.25)' : '1px solid transparent',
-                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
-                }}
-                onMouseEnter={(e) => {
-                  if (!active) {
-                    e.currentTarget.style.background = 'var(--bg-muted)';
-                    e.currentTarget.style.color = '#10b981';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!active) {
-                    e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.color = 'var(--text-main)';
-                  }
+                  fontSize: '0.875rem',
+                  fontWeight: active ? 700 : 500,
+                  color: active ? '#166534' : 'var(--text-main)',
+                  padding: '7px 14px',
+                  borderRadius: '6px',
+                  background: active ? '#f0fdf4' : 'transparent',
+                  border: active ? '1px solid #bbf7d0' : '1px solid transparent',
+                  transition: 'background-color 0.15s ease, color 0.15s ease'
                 }}
               >
-                <Icon size={18} />
+                <Icon size={16} />
                 <span>{item.label}</span>
-                {item.badge && (
-                  <span style={{
-                    fontSize: '0.625rem',
-                    fontWeight: 800,
-                    padding: '1px 5px',
-                    borderRadius: '4px',
-                    background: active ? '#10b981' : 'rgba(16, 185, 129, 0.15)',
-                    color: active ? '#ffffff' : '#10b981'
-                  }}>
-                    {item.badge}
-                  </span>
-                )}
               </Link>
             );
           })}
@@ -182,20 +172,19 @@ export default function Navbar() {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '6px',
                 textDecoration: 'none',
-                fontSize: '0.9375rem',
+                fontSize: '0.875rem',
                 fontWeight: 700,
-                color: location.pathname.includes('/dashboard') ? '#10b981' : 'var(--text-main)',
-                padding: '8px 16px',
-                borderRadius: '12px',
-                background: location.pathname.includes('/dashboard') ? 'rgba(16, 185, 129, 0.12)' : 'transparent',
-                border: location.pathname.includes('/dashboard') ? '1px solid rgba(16, 185, 129, 0.25)' : '1px solid transparent',
-                transition: 'all 0.2s ease'
+                color: location.pathname.includes('/dashboard') ? '#166534' : 'var(--text-main)',
+                padding: '7px 14px',
+                borderRadius: '6px',
+                background: location.pathname.includes('/dashboard') ? '#f0fdf4' : 'transparent',
+                border: location.pathname.includes('/dashboard') ? '1px solid #bbf7d0' : '1px solid transparent'
               }}
             >
-              <LayoutDashboard size={18} />
-              <span>{t('nav.portal', 'Portal')}</span>
+              <LayoutDashboard size={16} />
+              <span>Portal</span>
             </Link>
           )}
         </nav>

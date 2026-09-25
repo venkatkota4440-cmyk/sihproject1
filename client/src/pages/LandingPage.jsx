@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import ThreeDHero from '../components/three/ThreeDHero';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import CropCard from '../components/marketplace/CropCard';
 import OfferModal from '../components/negotiation/OfferModal';
 import CropScanner from '../components/ai/CropScanner';
@@ -46,6 +45,9 @@ export default function LandingPage({ forcedRole }) {
   const { demoLogin, user, logout } = useAuth();
   const { t, speak, isSpeaking, stopSpeaking, currentLanguageInfo } = useLanguage();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const isBuyer = forcedRole === 'BUYER' || user?.role === 'BUYER' || location.pathname === '/home/buyer' || location.pathname.startsWith('/buyer');
 
   const [showRoleNotifsModal, setShowRoleNotifsModal] = useState(false);
   const [showGateway, setShowGateway] = useState(false);
@@ -581,8 +583,7 @@ export default function LandingPage({ forcedRole }) {
         overflow: 'hidden',
         padding: '60px 0 40px'
       }}>
-        {/* 3D Animated Agricultural Environment */}
-        <ThreeDHero />
+
 
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <div style={{

@@ -91,64 +91,77 @@ export default function BuyerDashboard() {
 
   const activeInTransit = orders.filter(o => o.status === 'IN_TRANSIT' || o.status === 'TRANSPORT_ASSIGNED').length;
 
+  const modalPrices = mandiPrices.map(m => Number(m.modalPrice) || 0).filter(p => p > 0);
+  const minModal = modalPrices.length ? Math.min(...modalPrices) : 0;
+  const maxModal = modalPrices.length ? Math.max(...modalPrices) : 0;
+  const avgModal = modalPrices.length ? Math.round(modalPrices.reduce((a, b) => a + b, 0) / modalPrices.length) : 0;
+
   return (
-    <div className="container" style={{ padding: '36px 20px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+    <div className="container" style={{ padding: '32px 20px', display: 'flex', flexDirection: 'column', gap: '26px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', borderBottom: '1px solid var(--border-color)', paddingBottom: '20px' }}>
         <div>
-          <span className="badge badge-success">BUYER PROCUREMENT HUB</span>
-          <h1 style={{ fontSize: '2rem', fontWeight: 800, marginTop: '4px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+            <span style={{ background: '#166534', color: '#ffffff', fontSize: '0.6875rem', fontWeight: 800, padding: '3px 8px', borderRadius: '4px', letterSpacing: '0.04em' }}>
+              AGMARKNET / e-NAM ACCREDITED
+            </span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Wholesale Procurement Portal</span>
+          </div>
+          <h1 style={{ fontSize: '1.875rem', fontWeight: 800, margin: 0, color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
             Welcome back, {user?.name || 'Wholesale Buyer'}
           </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
-            Direct agricultural wholesale purchasing, contract fulfillment, and cold-chain deliveries.
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', margin: '4px 0 0' }}>
+            Official agricultural wholesale procurement desk, contract escrow settlements, and cold-chain dispatches.
           </p>
         </div>
 
         <div style={{ display: 'flex', gap: '10px' }}>
-          <Link to="/marketplace" className="btn btn-primary">
-            <Store size={18} /> Browse Marketplace
+          <Link to="/marketplace" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <Store size={16} /> Browse Live Marketplace
           </Link>
-          <Link to="/buyer/requirements" className="btn btn-secondary">
-            <PlusCircle size={18} /> Post Tender
+          <Link to="/buyer/orders" className="btn btn-secondary" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <Truck size={16} /> Track Shipments
           </Link>
         </div>
       </div>
 
       {/* AI Market Intelligence & Sourcing Desk Banner */}
-      <div className="glass-card" style={{
-        padding: '20px 24px',
-        borderLeft: '4px solid #2563eb',
-        background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(30, 64, 175, 0.03))',
+      <div style={{
+        padding: '18px 22px',
+        borderLeft: '4px solid #166534',
+        borderRadius: '8px',
+        border: '1px solid var(--border-color)',
+        borderLeftWidth: '4px',
+        background: 'var(--bg-card)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         flexWrap: 'wrap',
         gap: '16px'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(37, 99, 235, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb' }}>
-            <Sparkles size={24} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{ width: 40, height: 40, borderRadius: '8px', background: 'rgba(22, 101, 52, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#166534' }}>
+            <Sparkles size={22} />
           </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text-main)' }}>AI Smart Procurement & Sourcing Matchmaker</span>
+              <span style={{ fontWeight: 800, fontSize: '0.9375rem', color: 'var(--text-main)' }}>AI Smart Procurement & Sourcing Matchmaker</span>
               <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>AI POWERED</span>
             </div>
-            <p style={{ margin: '4px 0 0', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
+            <p style={{ margin: '3px 0 0', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
               Compare real-time terminal APMC prices against direct farm gate lots, calculate transport margins, and auto-match with verified Grade-A farmers.
             </p>
           </div>
         </div>
-        <Link to="/prices" className="btn btn-primary" style={{ padding: '8px 18px', fontSize: '0.875rem' }}>
-          Launch Intelligence Desk <ArrowRight size={16} />
+        <Link to="/prices" className="btn btn-outline btn-sm" style={{ padding: '8px 16px', fontSize: '0.8125rem', fontWeight: 700 }}>
+          Launch Intelligence Desk <ArrowRight size={14} />
         </Link>
       </div>
 
       {/* KPI Cards */}
       <div className="grid grid-cols-4 gap-6">
-        <div className="glass-card" style={{ padding: '20px' }}>
+        <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Total Procurement Volume</div>
-          <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#059669', marginTop: '4px' }}>
+          <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#166534', marginTop: '4px' }}>
             ₹{totalSpent.toLocaleString('en-IN')}
           </div>
           <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>
@@ -156,7 +169,7 @@ export default function BuyerDashboard() {
           </div>
         </div>
 
-        <div className="glass-card" style={{ padding: '20px' }}>
+        <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Shipments In Transit</div>
           <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#d97706', marginTop: '4px' }}>
             {activeInTransit} Loads
@@ -166,7 +179,7 @@ export default function BuyerDashboard() {
           </div>
         </div>
 
-        <div className="glass-card" style={{ padding: '20px' }}>
+        <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Active Bids & Negotiations</div>
           <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '4px' }}>
             {offers.length}
@@ -176,9 +189,9 @@ export default function BuyerDashboard() {
           </div>
         </div>
 
-        <div className="glass-card" style={{ padding: '20px' }}>
+        <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Escrow Status</div>
-          <div style={{ fontSize: '1.3rem', fontWeight: 800, color: '#10b981', marginTop: '6px' }}>
+          <div style={{ fontSize: '1.3rem', fontWeight: 800, color: '#166534', marginTop: '6px' }}>
             100% Protected
           </div>
           <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>
@@ -188,7 +201,7 @@ export default function BuyerDashboard() {
       </div>
 
       {/* LATEST MANDI MARKET PRICES & APMC BENCHMARKS (data.gov.in / DMI) */}
-      <div className="glass-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
@@ -434,36 +447,107 @@ export default function BuyerDashboard() {
         </div>
       </div>
 
+      {/* Active Procurement Orders Summary */}
+      {orders.length > 0 && (
+        <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+            <div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--text-main)' }}>Active Procurement Orders</h3>
+              <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', margin: '2px 0 0' }}>Current procurement contracts, live GPS dispatches, and delivery confirmations.</p>
+            </div>
+            <Link to="/buyer/orders" className="btn btn-outline btn-sm" style={{ fontWeight: 700 }}>
+              View All Orders ({orders.length}) <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--border-color)', textAlign: 'left', color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 700 }}>
+                  <th style={{ padding: '10px 12px' }}>ORDER ID</th>
+                  <th style={{ padding: '10px 12px' }}>COMMODITY</th>
+                  <th style={{ padding: '10px 12px' }}>PRODUCER</th>
+                  <th style={{ padding: '10px 12px' }}>QUANTITY</th>
+                  <th style={{ padding: '10px 12px' }}>AMOUNT</th>
+                  <th style={{ padding: '10px 12px' }}>STATUS</th>
+                  <th style={{ padding: '10px 12px', textAlign: 'right' }}>ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                {orders.slice(0, 5).map((o) => (
+                  <tr key={o.id} style={{ borderBottom: '1px solid var(--border-color)' }}>
+                    <td style={{ padding: '12px', fontWeight: 700, fontFamily: 'monospace', color: 'var(--text-muted)' }}>
+                      {o.orderNumber || o.id}
+                    </td>
+                    <td style={{ padding: '12px', fontWeight: 800 }}>{o.cropTitle}</td>
+                    <td style={{ padding: '12px', color: 'var(--text-muted)' }}>{o.farmerName}</td>
+                    <td style={{ padding: '12px' }}>{o.quantity} {o.unit}</td>
+                    <td style={{ padding: '12px', fontWeight: 800, color: '#166534' }}>
+                      ₹{Number(o.totalPrice || 0).toLocaleString('en-IN')}
+                    </td>
+                    <td style={{ padding: '12px' }}>
+                      <span className={`badge ${
+                        o.status === 'COMPLETED' || o.status === 'DELIVERED' ? 'badge-success' :
+                        o.status === 'IN_TRANSIT' ? 'badge-warning' : 'badge-neutral'
+                      }`}>
+                        {o.status.replace(/_/g, ' ')}
+                      </span>
+                    </td>
+                    <td style={{ padding: '12px', textAlign: 'right' }}>
+                      <Link to="/buyer/orders" className="btn btn-outline btn-sm" style={{ padding: '4px 10px', fontSize: '0.75rem' }}>
+                        Track <ArrowRight size={12} />
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
       {/* Quick Navigation Cards */}
       <div className="grid grid-cols-3 gap-6">
-        <Link to="/buyer/orders" className="glass-card" style={{ padding: '24px', textDecoration: 'none', color: 'inherit' }}>
-          <Truck size={28} color="#059669" style={{ marginBottom: '12px' }} />
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 800 }}>Track Shipments & Orders</h3>
-          <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
-            View live GPS truck positions, inspect delivery temperature, and provide arrival OTP.
-          </p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#059669', fontWeight: 700, fontSize: '0.8125rem', marginTop: '14px' }}>
+        <Link to="/buyer/orders" style={{ padding: '24px', textDecoration: 'none', color: 'inherit', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div>
+            <div style={{ width: 44, height: 44, borderRadius: '8px', background: 'rgba(22, 101, 52, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+              <Truck size={22} color="#166534" />
+            </div>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0 }}>Track Shipments & Orders</h3>
+            <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
+              View live GPS truck positions, inspect delivery temperature, and provide arrival OTP.
+            </p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#166534', fontWeight: 700, fontSize: '0.8125rem', marginTop: '14px' }}>
             Open Order Tracker <ArrowRight size={14} />
           </div>
         </Link>
 
-        <Link to="/buyer/offers" className="glass-card" style={{ padding: '24px', textDecoration: 'none', color: 'inherit' }}>
-          <Clock size={28} color="#f59e0b" style={{ marginBottom: '12px' }} />
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 800 }}>Review Counter-Offers</h3>
-          <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
-            Accept farmer price negotiations to automatically lock digital contracts.
-          </p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#f59e0b', fontWeight: 700, fontSize: '0.8125rem', marginTop: '14px' }}>
-            Review Bids <ArrowRight size={14} />
+        <Link to="/buyer/offers" style={{ padding: '24px', textDecoration: 'none', color: 'inherit', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div>
+            <div style={{ width: 44, height: 44, borderRadius: '8px', background: 'rgba(217, 119, 6, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+              <Clock size={22} color="#d97706" />
+            </div>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0 }}>Review Counter-Offers</h3>
+            <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
+              Accept farmer price negotiations to automatically lock digital contracts.
+            </p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#d97706', fontWeight: 700, fontSize: '0.8125rem', marginTop: '14px' }}>
+            Review Bids ({offers.length}) <ArrowRight size={14} />
           </div>
         </Link>
 
-        <Link to="/prices" className="glass-card" style={{ padding: '24px', textDecoration: 'none', color: 'inherit' }}>
-          <TrendingUp size={28} color="#2563eb" style={{ marginBottom: '12px' }} />
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 800 }}>Price Discovery Desk</h3>
-          <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
-            Compare spot rates against official APMC Mandi trends and AI forecasts.
-          </p>
+        <Link to="/prices" style={{ padding: '24px', textDecoration: 'none', color: 'inherit', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div>
+            <div style={{ width: 44, height: 44, borderRadius: '8px', background: 'rgba(37, 99, 235, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+              <TrendingUp size={22} color="#2563eb" />
+            </div>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0 }}>Price Discovery Desk</h3>
+            <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '6px', lineHeight: 1.5 }}>
+              Compare spot rates against official APMC Mandi trends and AI forecasts.
+            </p>
+          </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#2563eb', fontWeight: 700, fontSize: '0.8125rem', marginTop: '14px' }}>
             View Market Mandis <ArrowRight size={14} />
           </div>

@@ -57,14 +57,19 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div className="container" style={{ padding: '36px 20px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
+    <div className="container" style={{ padding: '32px 20px', display: 'flex', flexDirection: 'column', gap: '26px' }}>
       {/* Title */}
-      <div>
-        <span className="badge badge-success">CENTRAL REGULATORY DESK</span>
-        <h1 style={{ fontSize: '2rem', fontWeight: 800, marginTop: '4px' }}>
-          AgriNex Administrative Control Center
+      <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '20px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+          <span style={{ background: '#166534', color: '#ffffff', fontSize: '0.6875rem', fontWeight: 800, padding: '3px 8px', borderRadius: '4px', letterSpacing: '0.04em' }}>
+            CENTRAL REGULATORY DESK
+          </span>
+          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>AgriNex National Agricultural Portal Oversight</span>
+        </div>
+        <h1 style={{ fontSize: '1.875rem', fontWeight: 800, margin: 0, color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+          Administrative Control Center & Regulatory Ledger
         </h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', margin: '4px 0 0' }}>
           Platform monitoring, KYC identity verification, escrow ledger oversight, and tamper-evident audit logs.
         </p>
       </div>
@@ -72,7 +77,7 @@ export default function AdminDashboard() {
       {/* KPI Cards */}
       {stats && (
         <div className="grid grid-cols-4 gap-6">
-          <div className="glass-card" style={{ padding: '20px' }}>
+          <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Registered Users</div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '4px' }}>
               {stats.users?.total || 4}
@@ -82,17 +87,17 @@ export default function AdminDashboard() {
             </div>
           </div>
 
-          <div className="glass-card" style={{ padding: '20px' }}>
+          <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Gross Merchandise Value</div>
-            <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#059669', marginTop: '4px' }}>
+            <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#166534', marginTop: '4px' }}>
               ₹{Number(stats.financials?.gmv || 54000).toLocaleString('en-IN')}
             </div>
-            <div style={{ fontSize: '0.75rem', color: '#059669', fontWeight: 600, marginTop: '4px' }}>
+            <div style={{ fontSize: '0.75rem', color: '#166534', fontWeight: 600, marginTop: '4px' }}>
               Direct Farm Trade
             </div>
           </div>
 
-          <div className="glass-card" style={{ padding: '20px' }}>
+          <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Total Orders Executed</div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#2563eb', marginTop: '4px' }}>
               {stats.orders?.total || 1}
@@ -102,13 +107,13 @@ export default function AdminDashboard() {
             </div>
           </div>
 
-          <div className="glass-card" style={{ padding: '20px' }}>
+          <div style={{ padding: '20px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>Active Market Listings</div>
             <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '4px' }}>
               {stats.listings?.active || 8}
             </div>
-            <div style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600, marginTop: '4px' }}>
-              Verified Quality
+            <div style={{ fontSize: '0.75rem', color: '#166534', fontWeight: 600, marginTop: '4px' }}>
+              Verified Quality Lots
             </div>
           </div>
         </div>
@@ -131,9 +136,9 @@ export default function AdminDashboard() {
                 alignItems: 'center',
                 gap: '8px',
                 padding: '8px 16px',
-                borderRadius: '10px',
-                border: 'none',
-                background: activeTab === t.id ? 'linear-gradient(135deg, #059669 0%, #10b981 100%)' : 'var(--bg-muted)',
+                borderRadius: '6px',
+                border: '1px solid ' + (activeTab === t.id ? '#166534' : 'var(--border-color)'),
+                background: activeTab === t.id ? '#166534' : 'var(--bg-card)',
                 color: activeTab === t.id ? '#ffffff' : 'var(--text-main)',
                 fontWeight: 700,
                 fontSize: '0.8125rem',
@@ -149,7 +154,7 @@ export default function AdminDashboard() {
 
       {/* Tab 1: KYC Users */}
       {activeTab === 'users' && (
-        <div className="glass-card" style={{ padding: '24px' }}>
+        <div style={{ padding: '24px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '16px' }}>Registered Stakeholders</h3>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
             <thead>
@@ -193,7 +198,7 @@ export default function AdminDashboard() {
 
       {/* Tab 2: Escrow Ledger */}
       {activeTab === 'transactions' && (
-        <div className="glass-card" style={{ padding: '24px' }}>
+        <div style={{ padding: '24px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '16px' }}>Escrow Settlements Ledger</h3>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
             <thead>
@@ -214,7 +219,7 @@ export default function AdminDashboard() {
                   <td style={{ padding: '12px 0' }}>
                     <span className="badge badge-success">{t.status}</span>
                   </td>
-                  <td style={{ padding: '12px 0', textAlign: 'right', fontWeight: 800, color: '#059669' }}>
+                  <td style={{ padding: '12px 0', textAlign: 'right', fontWeight: 800, color: '#166534' }}>
                     ₹{Number(t.amount).toLocaleString('en-IN')}
                   </td>
                 </tr>
@@ -226,7 +231,7 @@ export default function AdminDashboard() {
 
       {/* Tab 3: Audit Logs */}
       {activeTab === 'audit' && (
-        <div className="glass-card" style={{ padding: '24px' }}>
+        <div style={{ padding: '24px', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
           <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '16px' }}>Tamper-Evident System Audit Logs</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {auditLogs.map((log) => (

@@ -2,7 +2,7 @@
   {
     "id": "pred_tomato_2026-10-02",
     "createdAt": "2026-09-25T14:21:04.082Z",
-    "updatedAt": "2026-09-25T14:34:58.880Z",
+    "updatedAt": "2026-09-25T17:11:36.311Z",
     "crop": "Tomato",
     "market": "Vashi APMC, Navi Mumbai",
     "forecastDate": "2026-10-02",
@@ -21,7 +21,7 @@
     "modelVersion": "AgriNex-ML-v2.4-GradientBoost-Ensemble",
     "dataType": "PREDICTED DATA",
     "disclaimer": "This is an AI mathematical estimate based on historical mandi arrivals, not a guaranteed market price.",
-    "generatedAt": "2026-09-25T14:34:58.880Z"
+    "generatedAt": "2026-09-25T17:11:36.311Z"
   },
   {
     "id": "pred_green gram / moong_2026-10-02",

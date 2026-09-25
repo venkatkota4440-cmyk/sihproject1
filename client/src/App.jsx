@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer';
 import DemoAccountBar from './components/layout/DemoAccountBar';
 import MobileBottomNav from './components/layout/MobileBottomNav';
 import ProtectedRoute from './components/layout/ProtectedRoute';
-import Aurora3DBackground from './components/three/Aurora3DBackground';
 
 // Onboarding, Tour & AI Assistant
 import OnboardingFlow from './components/onboarding/OnboardingFlow';
@@ -53,13 +52,10 @@ import { useAuth } from './context/AuthContext';
 
 export default function App() {
   const [assistantOpen, setAssistantOpen] = useState(false);
-  const { isAuthenticated, loading } = useAuth();
+  const { isAuthenticated, user, loading } = useAuth();
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' }}>
-      {/* 3D Animated Aurora & Agricultural Terrain Canvas */}
-      <Aurora3DBackground />
-
       {/* 1-Click Hackathon Evaluator Bar */}
       <DemoAccountBar />
 
@@ -90,7 +86,11 @@ export default function App() {
                   </div>
                 </div>
               ) : isAuthenticated ? (
-                <LandingPage />
+                user?.role === 'FARMER' ? <Navigate to="/farmer/dashboard" replace /> :
+                user?.role === 'BUYER' ? <Navigate to="/buyer/dashboard" replace /> :
+                user?.role === 'TRANSPORTER' ? <Navigate to="/transporter/dashboard" replace /> :
+                user?.role === 'ADMIN' ? <Navigate to="/admin/dashboard" replace /> :
+                <Navigate to="/farmer/dashboard" replace />
               ) : (
                 <Navigate to="/welcome" replace />
               )

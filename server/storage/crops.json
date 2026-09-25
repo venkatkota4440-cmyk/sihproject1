@@ -3661,5 +3661,34 @@
     "isAvailable": true,
     "activeListing": true,
     "views": 1
+  },
+  {
+    "id": "agx_1790358110218_iadrfm",
+    "createdAt": "2026-09-25T17:41:50.218Z",
+    "updatedAt": "2026-09-25T17:41:50.218Z",
+    "farmerId": "farmer_pub_muh8zr4a",
+    "farmerName": "Ramesh Kumar",
+    "farmerRating": 4.9,
+    "title": "Tomato",
+    "category": "Vegetables",
+    "variety": "Standard",
+    "quantity": 500,
+    "unit": "kg",
+    "pricePerUnit": 28,
+    "minPrice": 24,
+    "harvestDate": "2026-09-25",
+    "qualityGrade": "Grade A",
+    "isOrganic": false,
+    "description": "High quality, freshly harvested Tomato.",
+    "location": {
+      "district": "Narasaraopeta",
+      "state": "Andhra Pradesh"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
+    ],
+    "isAvailable": true,
+    "activeListing": true,
+    "views": 1
   }
 ]

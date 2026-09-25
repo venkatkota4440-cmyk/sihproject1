@@ -169,37 +169,18 @@ body {
   text-decoration: none;
   user-select: none;
   white-space: nowrap;
-  /* 3D Momentum & Perspective Setup */
-  transform-style: preserve-3d;
-  transform: perspective(600px) translateZ(0) translateY(0);
-  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
-              border-color 0.25s ease,
-              background 0.25s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   overflow: visible;
 }
 
-/* 3D Hover Momentum & Boundary Aura */
+/* Button Hover State */
 .btn:hover {
-  transform: perspective(600px) translateY(-3.5px) translateZ(10px) scale(1.025);
-  animation: aura-boundary-glow 2.2s infinite ease-in-out;
+  opacity: 0.95;
 }
 
-/* 3D Active / Press Depression */
+/* Button Active State */
 .btn:active {
-  transform: perspective(600px) translateY(2px) translateZ(-6px) scale(0.965) !important;
-  box-shadow: 
-    0 0 0 2px var(--btn-aura-color-bright, rgba(52, 211, 153, 0.95)),
-    0 0 20px 4px var(--btn-aura-glow, rgba(16, 185, 129, 0.6)),
-    0 2px 8px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Selected or Focused Button with Persistent Aura Boundary */
-.btn:focus-visible,
-.btn.active,
-.btn[aria-selected="true"] {
-  transform: perspective(600px) translateY(-2px) translateZ(8px) scale(1.015);
-  animation: aura-boundary-glow 2.2s infinite ease-in-out;
+  transform: translateY(1px);
 }
 
 /* Subtle Shimmer Ray on hover */
@@ -521,13 +502,9 @@ body {
   border-color: #10b981;
 }
 
-/* Card image subtle zoom */
+/* Card image standard fit */
 .crop-card-img {
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card:hover .crop-card-img {
-  transform: scale(1.05);
+  object-fit: cover;
 }
 
 /* Gradients */
@@ -745,14 +722,13 @@ body {
   }
 }
 
-/* Interactive Card Hover Depth */
+/* Card Hover Depth - Clean & Restrained */
 .card-hover-depth {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-hover-depth:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* ===================================================

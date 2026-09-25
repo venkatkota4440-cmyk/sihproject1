@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { Sparkles, Sprout, ShoppingCart, Truck, ShieldCheck, LogOut } from 'lucide-react';
@@ -6,6 +7,7 @@ import { Sparkles, Sprout, ShoppingCart, Truck, ShieldCheck, LogOut } from 'luci
 export default function DemoAccountBar() {
   const { demoLogin, user, logout } = useAuth();
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const roles = [
     { id: 'FARMER', label: `${t('roles.farmer', 'Farmer')} (Ramesh)`, icon: Sprout, color: '#10b981' },
@@ -71,7 +73,13 @@ export default function DemoAccountBar() {
           return (
             <button
               key={r.id}
-              onClick={() => demoLogin(r.id)}
+              onClick={async () => {
+                await demoLogin(r.id);
+                if (r.id === 'FARMER') navigate('/farmer/dashboard');
+                else if (r.id === 'BUYER') navigate('/buyer/dashboard');
+                else if (r.id === 'TRANSPORTER') navigate('/transporter/dashboard');
+                else if (r.id === 'ADMIN') navigate('/admin/dashboard');
+              }}
               style={{
                 background: isActive
                   ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)'

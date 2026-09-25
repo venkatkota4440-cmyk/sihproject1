@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import OfferModal from '../../components/negotiation/OfferModal';
 import api from '../../services/api';
-import confetti from 'canvas-confetti';
 import {
   MapPin,
   Star,
